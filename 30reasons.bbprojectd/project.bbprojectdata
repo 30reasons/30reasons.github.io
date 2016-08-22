@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>2D908FB6-90AE-4602-8FB3-B1E809512B97</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>2D908FB6-90AE-4602-8FB3-B1E809512B97</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va2ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAXAIAAAUAAAABAQAAVXNlcnMA
+				AAAHAAAAAQEAAHNuZXRtYW4ABQAAAAEBAABTaXRlcwAA
+				AAkAAAABAQAAMzByZWFzb25zAAAAEAAAAAEGAAAEAAAA
+				FAAAACQAAAA0AAAACAAAAAQDAACtZAIAAAAAAAgAAAAE
+				AwAAPf4IAAAAAAAIAAAABAMAAOifEgAAAAAACAAAAAQD
+				AAAO1dACAAAAABAAAAABBgAAYAAAAHAAAACAAAAAkAAA
+				AAgAAAAABAAAQb1VEisAAAAYAAAAAQIAAAIAAAAAAAAA
+				DwAAAAAAAAAAAAAAAAAAAAQAAAADAwAAAgAAAAQAAAAD
+				AwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1h
+				Y2ludG9zaCBIRAgAAAAEAwAAALCDwugAAAAIAAAAAAQA
+				AEG4J1bKAAAAJAAAAAEBAAA4QTk3NERFQi00NzhGLTMw
+				OEUtOTZENS1EQjA4RTY0QTE3RjAYAAAAAQIAAIEAAAAB
+				AAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+				AAABBQAArwAAAAECAAA5ODRmNGE1MmEzNWRhODBhZWFh
+				Y2Y5M2FiOTgwMTQxMjFjODI3ZjkyOzAwMDAwMDAwOzAw
+				MDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxl
+				LmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
+				MDEwMDAwMDM7MDAwMDAwMDAwMmQwZDUwZTsvdXNlcnMv
+				c25ldG1hbi9zaXRlcy8zMHJlYXNvbnMAAMwAAAD+////
+				AQAAAAAAAAAQAAAABBAAAEgAAAAAAAAABRAAAKAAAAAA
+				AAAAEBAAAMgAAAAAAAAAQBAAALgAAAAAAAAAAiAAAJAB
+				AAAAAAAABSAAAAABAAAAAAAAECAAABABAAAAAAAAESAA
+				AEQBAAAAAAAAEiAAACQBAAAAAAAAEyAAADQBAAAAAAAA
+				ICAAAHABAAAAAAAAMCAAAJwBAAAAAAAAAcAAAOgAAAAA
+				AAAAEcAAABQAAAAAAAAAEsAAAPQAAAAAAAAAgPAAAKQB
+				AAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/snetman/Sites/30reasons/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>30reasons</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>

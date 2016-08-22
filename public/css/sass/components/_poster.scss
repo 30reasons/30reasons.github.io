@@ -1,0 +1,98 @@
+//
+// Poster
+//
+
+.poster-slide {
+	margin: 0 gridPadding(base);
+}
+.poster {
+	
+
+}
+
+.poster__info {
+	border-bottom: 1px solid palette(blue, x-light);
+	margin-bottom: space(mobile, small);
+	background-color: palette(white);
+	background-color: rgba(255,255,255,.8);
+		
+	> * {
+		border-top: 1px solid palette(blue, x-light);
+		margin-top: 0;
+	}
+	
+	@include breakpoint($bp-med) {
+		margin-bottom: space(standard, small);
+	}
+}
+
+.poster__artist,
+.poster__pubdate,
+.poster__description,
+.poster__toggle {
+	padding: space(mobile, x-small) 0;	
+	@include breakpoint($bp-med) {
+		padding: space(standard, x-small) 0;
+	}
+}
+
+.poster__number {
+	border-top-width: 0;
+	margin-bottom: -4px;
+	margin-top: -18px; // overcome the large line-height of the big number
+	font-size: 128px;
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: -10px;
+	line-height: lineHeight(flush);
+	color: palette(red);
+	text-indent: -3px;
+}
+.poster__artist {
+	@extend .as-h2;
+}
+.poster__pubdate {
+	font-family: monospace;
+}
+.poster__description {
+
+}
+.poster__image {
+	margin-top: 0;
+}
+.poster__toggle {
+	@extend .as-h2;
+	font-weight: fontWeight(body);
+	.no-js & {
+		display: none;
+	}
+	a {
+		margin-top: 0;
+	}
+}
+
+//
+// States
+
+.js .poster__info {
+	&.is-closed {
+		.poster__pubdate,
+		.poster__description,
+		.poster__info-close {
+			display: none;
+		}
+		.poster__info-open {
+			display: block;
+		}
+	}
+	&.is-open {
+		.poster__pubdate,
+		.poster__description,
+		.poster__info-close {
+			display: block;
+		}
+		.poster__info-open {
+			display: none;
+		}
+	}
+}

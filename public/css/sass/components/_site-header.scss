@@ -1,0 +1,56 @@
+//
+// Site header
+//
+
+.site-header {
+	padding: space(mobile);
+	background: palette(blue);
+	color: palette(white);
+	
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+	}
+
+	.logo {
+		font-size: 28px;
+		font-weight: fontWeight(body);
+		color: palette(white);
+		.num {
+			display: inline-block;
+			margin-right: .1em;
+			font-weight: fontWeight(headline);
+			color: palette(red);
+			letter-spacing: 1px;
+		}
+		@include breakpoint($bp-med) {
+			font-size: 32px;
+		}
+	}
+
+	.logo-reverse {
+		color: palette(blue);
+		.num {
+			color: palette(red);
+		}
+	}
+	
+	.positioning {
+		font-weight: fontWeight(body);
+		color: palette(blue, x-light);
+	}
+	
+	.main-nav {
+		margin-top: space(mobile);
+		li {
+			@include zero;
+			display: inline-block;
+			margin-right: space(mobile, small);
+		}
+		a {
+			color: palette(white);
+		}
+	}			
+}
+
+
+

@@ -1,0 +1,14 @@
+//
+// Site content
+//
+
+.site-content {
+	margin-top: 0;
+	padding: space(mobile) 0;
+	@include breakpoint($bp-med) {
+		padding: space(standard) 0;
+	}
+}
+
+
+

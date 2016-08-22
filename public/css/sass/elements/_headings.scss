@@ -1,0 +1,80 @@
+//
+// Headings
+//
+
+// Common settings
+h1,h2,h3,h4,h5,h6 {
+  font-family: fontFamily(headline);
+  color: palette(blue);
+}
+
+// Hierarchy
+$heading-base: fontSize(base);
+$heading-base-mobile: fontSize(base-mobile);
+
+h1, .as-h1 {
+	font-size: 28px;
+  font-weight: fontWeight(body);
+	line-height: lineHeight(base-mobile);
+	@include breakpoint($bp-med) {
+		font-size: 32px;
+		line-height: lineHeight(base);
+	}
+}
+h2, .as-h2 {
+	font-size: 16px;
+  font-weight: fontWeight(headline);
+	line-height: lineHeight(base-mobile);
+	@include breakpoint($bp-med) {
+		font-size: 20px;
+		line-height: lineHeight(base);
+	}
+}
+h3, .as-h3 {
+	font-size: 13px;
+  font-weight: fontWeight(headline);
+	line-height: lineHeight(base-mobile);
+	@include breakpoint($bp-med) {
+		font-size: 14px;
+		line-height: lineHeight(base);
+	}
+}
+/*
+h4, .as-h4 {
+	font-size: pem(24px, fontSize(base));
+	line-height: 1.25; // 30
+	font-weight: fontWeight(body);
+	+ * {
+		margin-top: space(standard, small);
+	}
+}
+h5, .as-h5 {
+	font-size: pem(18px, fontSize(base));
+  font-weight: fontWeight(headline);
+	line-height: lineHeight(base);
+	+ * {
+		margin-top: 0;
+	}
+}
+h6, .as-h6 {
+	font-size: pem(18px, fontSize(base));
+	font-style: italic;
+	font-weight: fontWeight(body);
+	line-height: lineHeight(base);
+	+ * {
+		margin-top: 0;
+	}
+}
+*/
+// Etc.
+hgroup {
+  * + * {
+  	margin-top: 0;//space(standard, x-small);
+  }
+  * {
+  	line-height: lineHeight(tight);
+  }
+}
+	
+	
+
