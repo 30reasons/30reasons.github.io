@@ -39,11 +39,11 @@
 
 <body>
 
-<div id="OuterWrap">
-<div id="InnerWrap">
+<div id="Wrap">
 
 	<header id="Top" class="site-header" role="banner">
-		<h1 class="positioning as-h2"><span class="logo"><span class="num">30</span>Reasons</span> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1>
+		<!-- <h1 class="positioning as-h2"><span class="logo"><span class="num">30</span>Reasons</span> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1> -->
+		<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1>
 		<ul class="main-nav">
 			<li><a href="#">All</a></li>
 			<li><a href="#">Donate</a></li>
@@ -54,7 +54,7 @@
 		<div class="poster-slide">
 			<figure id="P01" class="poster">
 				<figcaption class="poster__info is-closed">
-					<div class="poster__number">29</div>
+					<div class="poster__number"><span class="number__tens number--2">2</span><span class="number__ones number--8">9</span></div>
 					<div class="poster__artist">Brett Yasko</div>
 					<div class="poster__pubdate">Jul. 15</div>
 					<div class="poster__description">
@@ -68,12 +68,16 @@
 						<a href="#P01" class="poster__info-open">Info</a>
 						<a href="#P01" class="poster__info-close">Close</a>
 					</div>
+					<!--
+					<ul class="poster__share">
+						<li><a class="share--fb" href="#">Facebook</a></li>
+						<li><a class="share--tw" href="#">Twitter</a></li>
+					</ul>
+
 				</figcaption>
-				<img class="poster__image" src="public/images/poster-fpo.png" />
-				<ul class="poster__share">
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-				</ul>
+				<div class="poster__image">
+					<img src="public/images/poster-fpo.png" />
+				</div>
 			</figure>
 	</section>
   
@@ -82,13 +86,14 @@
 	</footer>
   
 </div>
-<!--/#InnerWrap-->
-</div>
-<!--/#OuterWrap-->
+<!--/#Wrap-->
 
 <!-- jQuery -->
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='public/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
+-->
+<script src="public/js/libs/jquery-1.11.3.min.js"></script>
 <!-- Custom functions-->
 <script src="public/js/min/functions-min.js"></script>
 <script>$(document).ready(initPage);</script>

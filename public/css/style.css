@@ -345,16 +345,16 @@ body {
         margin-top: 20px; } }
 
 a {
-  color: #0097db;
+  color: #3C5068;
   text-decoration: underline;
   outline: 0; }
   a:hover {
-    color: #0fb4ff;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3C5068; }
   a:visited {
-    color: #0074a8; }
+    color: #3C5068; }
   a:focus {
-    color: #0fb4ff; }
+    color: #3C5068; }
 
 a[rel="external"]:after {
   content: "☞";
@@ -388,12 +388,12 @@ h1, .as-h1 {
       font-size: 32px;
       line-height: 1.42857; } }
 
-h2, .as-h2, .poster__artist, .poster__toggle {
+h2, .as-h2, .poster__artist {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.38462; }
   @media (min-width: 46.75em) {
-    h2, .as-h2, .poster__artist, .poster__toggle {
+    h2, .as-h2, .poster__artist {
       font-size: 20px;
       line-height: 1.42857; } }
 
@@ -932,14 +932,10 @@ legend.is-visually-hidden + * {
       padding-left: 40px;
       padding-right: 40px; } }
 
-#outer-wrap {
+#Wrap {
   position: relative;
-  overflow: hidden;
-  width: 100%; }
-
-#inner-wrap {
-  position: relative;
-  width: 100%; }
+  width: 100%;
+  min-height: 100%; }
 
 @media (min-width: 46.75em) {
   .l-1col .l-main {
@@ -1025,8 +1021,46 @@ legend.is-visually-hidden + * {
       margin-left: 84.74576%;
       margin-right: -100%; } }
 
+#Wrap {
+  outline: 2px solid blue; }
+  @media (min-width: 63.75em) {
+    #Wrap {
+      display: flex;
+      min-height: 100vh;
+      align-items: stretch; }
+      #Wrap .site-header {
+        width: 33%;
+        flex: 1 1 auto;
+        background-color: #ff0000; }
+      #Wrap .site-content {
+        flex: 1 1 auto;
+        background-color: #0F1E30;
+        background-color: white; }
+      #Wrap .site-footer {
+        display: none; } }
+  @media (min-width: 75em) {
+    #Wrap .site-header {
+      width: 20%; } }
+
 .poster-slide {
   margin: 0 20px; }
+
+.poster {
+  position: relative; }
+  @media (min-width: 63.75em) {
+    .poster {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start; }
+      .poster .poster__info {
+        margin-right: 20px;
+        width: 250px; }
+      .poster .poster__image {
+        flex: 1 1 auto;
+        align-self: flex-start; } }
+  @media (min-width: 75em) {
+    .poster .poster__info {
+      width: 250px; } }
 
 .poster__info {
   border-bottom: 1px solid #6B819A;
@@ -1036,46 +1070,112 @@ legend.is-visually-hidden + * {
   .poster__info > * {
     border-top: 1px solid #6B819A;
     margin-top: 0; }
-  @media (min-width: 46.75em) {
-    .poster__info {
-      margin-bottom: 10px; } }
 
 .poster__artist,
 .poster__pubdate,
 .poster__description,
+.poster__share,
 .poster__toggle {
   padding: 4.5px 0; }
   @media (min-width: 46.75em) {
     .poster__artist,
     .poster__pubdate,
     .poster__description,
+    .poster__share,
     .poster__toggle {
       padding: 5px 0; } }
 
 .poster__number {
   border-top-width: 0;
-  margin-bottom: -4px;
-  margin-top: -18px;
-  font-size: 128px;
-  font-family: monospace;
-  font-weight: bold;
-  letter-spacing: -10px;
-  line-height: 1;
-  color: #D80000;
-  text-indent: -3px; }
+  position: relative;
+  display: block;
+  margin: 0;
+  height: 108px;
+  width: 132px;
+  text-indent: 198px;
+  overflow: hidden; }
+  .poster__number .number__tens,
+  .poster__number .number__ones {
+    margin: 0;
+    display: block;
+    height: 108px;
+    width: 66px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/30reasons-numbers.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: transparent; }
+  .poster__number .number__ones {
+    left: 66px; }
+  .poster__number .number--0 {
+    background-position: 0 0px; }
+  .poster__number .number--1 {
+    background-position: 0 -150px; }
+  .poster__number .number--2 {
+    background-position: 0 -300px; }
+  .poster__number .number--3 {
+    background-position: 0 -450px; }
+  .poster__number .number--4 {
+    background-position: 0 -600px; }
+  .poster__number .number--5 {
+    background-position: 0 -750px; }
+  .poster__number .number--6 {
+    background-position: 0 -900px; }
+  .poster__number .number--7 {
+    background-position: 0 -1050px; }
+  .poster__number .number--8 {
+    background-position: 0 -1200px; }
+  .poster__number .number--9 {
+    background-position: 0 -1350px; }
 
 .poster__pubdate {
   font-family: monospace; }
 
 .poster__image {
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center;
+  max-width: 776px;
+  margin: 0 auto; }
+  .poster__image img {
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
 
-.poster__toggle {
-  font-weight: 400; }
-  .no-js .poster__toggle {
-    display: none; }
-  .poster__toggle a {
-    margin-top: 0; }
+.no-js .poster__toggle {
+  display: none; }
+.poster__toggle a {
+  margin-top: 0; }
+@media (min-width: 0) and (max-width: 46.75em) {
+  .poster__toggle {
+    position: absolute;
+    top: 111px;
+    right: 0;
+    border: none; } }
+
+.poster__share {
+  margin: 0;
+  text-align: left; }
+  .poster__share li {
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+  .poster__share a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: 100px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%; }
+    .poster__share a:hover {
+      opacity: .5; }
+  .poster__share .share--tw {
+    background-image: url(../images/icon-twitter.svg); }
+  .poster__share .share--fb {
+    background-image: url(../images/icon-facebook.svg); }
 
 .js .poster__info.is-closed .poster__pubdate,
 .js .poster__info.is-closed .poster__description,
@@ -1099,31 +1199,55 @@ legend.is-visually-hidden + * {
 
 .site-header {
   padding: 18px;
-  background: #0F1E30;
-  color: #ffffff; }
+  min-height: 225px;
+  background-image: url(../images/hillary-plane-tinted.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (min-width: 46.75em) {
     .site-header {
       padding: 20px; } }
   .site-header .logo {
+    /*
     font-size: 28px;
-    font-weight: 400;
-    color: #ffffff; }
-    .site-header .logo .num {
-      display: inline-block;
-      margin-right: .1em;
-      font-weight: 700;
-      color: #D80000;
-      letter-spacing: 1px; }
+    font-weight: fontWeight(body);
+    color: palette(white);
+    .num {
+    	display: inline-block;
+    	margin-right: .1em;
+    	font-weight: fontWeight(headline);
+    	color: palette(red);
+    	letter-spacing: 1px;
+    }
+    @include breakpoint($bp-med) {
+    	font-size: 32px;
+    }
+    */
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 125px;
+    text-indent: 125px;
+    overflow: hidden;
+    background-image: url(../images/30reasons-logo-xsmall.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top; }
+    @media (min-width: 0) and (max-width: 46.75em) {
+      .site-header .logo {
+        top: -4px;
+        margin-right: -4px; } }
     @media (min-width: 46.75em) {
       .site-header .logo {
-        font-size: 32px; } }
+        top: 0;
+        margin-right: -4px; } }
   .site-header .logo-reverse {
     color: #0F1E30; }
     .site-header .logo-reverse .num {
       color: #D80000; }
   .site-header .positioning {
     font-weight: 400;
-    color: #6B819A; }
+    color: #0F1E30; }
   .site-header .main-nav {
     margin-top: 18px; }
     .site-header .main-nav li {
@@ -1133,3 +1257,11 @@ legend.is-visually-hidden + * {
       margin-right: 9px; }
     .site-header .main-nav a {
       color: #ffffff; }
+
+.site-footer {
+  padding: 18px;
+  background: transparent;
+  color: #3C5068; }
+  @media (min-width: 46.75em) {
+    .site-footer {
+      padding: 20px; } }

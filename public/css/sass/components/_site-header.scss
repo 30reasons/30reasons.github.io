@@ -4,14 +4,24 @@
 
 .site-header {
 	padding: space(mobile);
-	background: palette(blue);
-	color: palette(white);
+	min-height: 225px;
+	//background: palette(blue);
+	//color: palette(white);
+	
+	background: {
+		image: url(../images/hillary-plane-tinted.jpg);
+		position: center top;
+		size: cover;
+		repeat: no-repeat;
+	}
+	color: palette(blue, dark);
 	
 	@include breakpoint($bp-med) {
 		padding: space(standard);
 	}
 
 	.logo {
+		/*
 		font-size: 28px;
 		font-weight: fontWeight(body);
 		color: palette(white);
@@ -25,6 +35,27 @@
 		@include breakpoint($bp-med) {
 			font-size: 32px;
 		}
+		*/
+		position: relative;
+		display: inline-block;
+		height: 25px;
+		width: 125px;
+		text-indent: 125px;
+		overflow: hidden;
+		background: {
+			image: url(../images/30reasons-logo-xsmall.svg);
+			repeat: no-repeat;
+			size: contain;
+			position: left top;
+		}
+		@include breakpoint(0 $bp-med) {
+			top: -4px;
+			margin-right: -4px;
+		}
+		@include breakpoint($bp-med) {
+			top: 0;
+			margin-right: -4px; 
+		}
 	}
 
 	.logo-reverse {
@@ -36,7 +67,7 @@
 	
 	.positioning {
 		font-weight: fontWeight(body);
-		color: palette(blue, x-light);
+		color: palette(blue);
 	}
 	
 	.main-nav {

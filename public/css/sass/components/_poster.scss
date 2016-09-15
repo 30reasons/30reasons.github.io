@@ -2,12 +2,43 @@
 // Poster
 //
 
+//
+// Variables
+
+$num-offset: -150px;
+$num-height: 108px;
+$num-width: 66px;
+
+//$poster-offset-mobile: 133px;
+//$poster-offset-tablet: 192px;
+//$poster-offset-desktop: 124px;
+
+//
+// Styles
+
 .poster-slide {
 	margin: 0 gridPadding(base);
 }
 .poster {
-	
-
+	position: relative;
+	@include breakpoint($bp-large) {
+		min-height: 100vh;
+		display: flex;
+		align-items: flex-start;
+		.poster__info {
+			margin-right: space(standard);
+			width: 250px;
+		}
+		.poster__image {
+			flex: 1 1 auto;
+			align-self: flex-start;
+		}
+	}
+	@include breakpoint($bp-x-large) {
+		.poster__info {
+			width: 250px;;
+		}
+	}
 }
 
 .poster__info {
@@ -19,16 +50,13 @@
 	> * {
 		border-top: 1px solid palette(blue, x-light);
 		margin-top: 0;
-	}
-	
-	@include breakpoint($bp-med) {
-		margin-bottom: space(standard, small);
-	}
+	}	
 }
 
 .poster__artist,
 .poster__pubdate,
 .poster__description,
+.poster__share,
 .poster__toggle {
 	padding: space(mobile, x-small) 0;	
 	@include breakpoint($bp-med) {
@@ -38,15 +66,63 @@
 
 .poster__number {
 	border-top-width: 0;
-	margin-bottom: -4px;
-	margin-top: -18px; // overcome the large line-height of the big number
-	font-size: 128px;
-	font-family: monospace;
-	font-weight: bold;
-	letter-spacing: -10px;
-	line-height: lineHeight(flush);
-	color: palette(red);
-	text-indent: -3px;
+	position: relative;
+	display: block;
+	margin: 0;
+	height: $num-height;
+	width: $num-width*2;
+	text-indent: $num-width*3;
+	overflow: hidden;
+	.number__tens,
+	.number__ones {
+		margin: 0;
+		display: block;
+		height: $num-height;
+		width: $num-width;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: {
+			image: url(../images/30reasons-numbers.svg);
+			position: left top;
+			repeat: no-repeat;
+			color: transparent;
+		}
+	}
+	.number__ones {
+		left: $num-width;
+	}
+	.number--0 {
+		background-position: 0 0*$num-offset;
+	}
+	.number--1 {
+		background-position: 0 1*$num-offset;
+	}
+	.number--2 {
+		background-position: 0 2*$num-offset;
+	}
+	.number--3 {
+		background-position: 0 3*$num-offset;
+	}
+	.number--4 {
+		background-position: 0 4*$num-offset;
+	}
+	.number--5 {
+		background-position: 0 5*$num-offset;
+	}
+	.number--6 {
+		background-position: 0 6*$num-offset;
+	}
+	.number--7 {
+		background-position: 0 7*$num-offset;
+	}
+	.number--8 {
+		background-position: 0 8*$num-offset;
+	}
+	.number--9 {
+		background-position: 0 9*$num-offset;
+	}
+	
 }
 .poster__artist {
 	@extend .as-h2;
@@ -59,15 +135,56 @@
 }
 .poster__image {
 	margin-top: 0;
+	text-align: center;
+	max-width: 776px;
+	margin: 0 auto;
+	img {
+		@include zero;
+		display: inline-block;
+	}
 }
 .poster__toggle {
-	@extend .as-h2;
-	font-weight: fontWeight(body);
 	.no-js & {
 		display: none;
 	}
 	a {
 		margin-top: 0;
+	}
+	@include breakpoint(0 $bp-med) {
+		position: absolute;
+		top: $num-height + 3px; // the 1px is to account for the border
+		right: 0;
+		border: none;
+	}
+}
+
+.poster__share {
+	margin: 0;
+	text-align: left;
+	li {
+		@include zero;
+		display: inline-block;
+	}
+	a {
+		display: block;
+		width: 40px;
+		height: 40px;
+		text-indent: 100px;
+		overflow: hidden;
+		background: {
+			repeat: no-repeat;
+			position: center center;
+			size: 100%;
+		}
+		&:hover {
+			opacity: .5;
+		}
+	}
+	.share--tw {
+		background-image: url(../images/icon-twitter.svg);
+	}
+	.share--fb {
+		background-image: url(../images/icon-facebook.svg);
 	}
 }
 

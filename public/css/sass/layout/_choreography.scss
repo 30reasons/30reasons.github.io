@@ -1,0 +1,35 @@
+//
+// Layout choreography
+//
+
+#Wrap {
+	outline: 2px solid blue;
+	
+	@include breakpoint($bp-large) {
+		display: flex;
+		min-height: 100vh;
+		align-items: stretch;
+		.site-header {
+			width: 33%;
+			flex: 1 1 auto;
+			background-color: #ff0000;
+		}
+		.site-content {
+			flex: 1 1 auto;
+			background-color: palette(blue);
+			background-color: white;
+		}
+		.site-footer {
+			display: none;
+		}
+		
+		
+	}
+	
+	@include breakpoint($bp-x-large) {
+		.site-header {
+			width: 20%;
+		}
+	}
+}
+

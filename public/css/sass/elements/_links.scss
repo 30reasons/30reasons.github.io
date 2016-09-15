@@ -3,18 +3,18 @@
 //
 
 a {
-	color: palette(process-cyan);
+	color: palette(blue, light);
 	text-decoration: underline;
 	outline: 0;
 	&:hover {
-		color: palette(process-cyan, light);
 		text-decoration: none;
+		color: palette(blue, light);
 	}
 	&:visited {
-		color: palette(process-cyan, dark);
+		color: palette(blue, light);
 	}
 	&:focus {
-  	color: palette(process-cyan, light);
+		color: palette(blue, light);
 	}
 }
 

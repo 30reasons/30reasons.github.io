@@ -1,0 +1,14 @@
+//
+// Site footer
+//
+
+.site-footer {
+	padding: space(mobile);
+	background: transparent;
+	color: palette(blue, light);
+	
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+	}
+
+}

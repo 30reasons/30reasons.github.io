@@ -31,15 +31,10 @@
 
 // Main containers
 
-#outer-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-#inner-wrap {
+#Wrap {
   position: relative;
   width: 100%;
+  min-height: 100%;
 }
 
 
