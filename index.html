@@ -42,20 +42,22 @@
 <div id="Wrap">
 
 	<header id="Top" class="site-header" role="banner">
-		<!-- <h1 class="positioning as-h2"><span class="logo"><span class="num">30</span>Reasons</span> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1> -->
-		<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1>
-		<ul class="main-nav">
-			<li><a href="#">All</a></li>
-			<li><a href="#">Donate</a></li>
-		</ul>
+		<div class="site-header__inner">
+			<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-day poster campaign encouraging voters to support Hillary Clinton for President.</h1>
+			<ul class="main-nav list">
+				<li><a href="#">View all posters</a></li>
+				<li><a href="#">Donate to the campaign</a></li>
+			</ul>
+			<a class="site-logo" href="#"><img src="public/images/30reasons-logo.svg" /></a>
+		</div>
 	</header>
 
 	<section id="Content" class="site-content">
 		<div class="poster-slide">
-			<figure id="P01" class="poster">
-				<figcaption class="poster__info is-closed">
+			<div id="P01" class="poster">
+				<div class="poster__info is-closed">
 					<div class="poster__number"><span class="number__tens number--2">2</span><span class="number__ones number--8">9</span></div>
-					<div class="poster__artist">Brett Yasko</div>
+					<div class="poster__artist"><a href="#">Brett Yasko</a></div>
 					<div class="poster__pubdate">Jul. 15</div>
 					<div class="poster__description">
 						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare. Donec quis odio odio. Proin ut pulvinar dolor, nec elementum aante. Suspen disse potenti. Proin sagittis nisl quis ente porat suscipit. Nunc finibus accumasan turpis, sit amet dignissim magna dictum sit amet. Nulla vulputate et ex et tempus.</p>
@@ -64,26 +66,30 @@
 							<li><a href="#">@mytwitter</a></li>
 						</ul>
 					</div>
-					<div class="poster__toggle">
-						<a href="#P01" class="poster__info-open">Info</a>
-						<a href="#P01" class="poster__info-close">Close</a>
+					<div class="poster__actions">
+						<div class="poster__toggle">
+							<a href="#P01" class="poster__info-open">Show info</a>
+							<a href="#P01" class="poster__info-close">Close info</a>
+						</div>
+						<a class="share--fb" href="#">Facebook</a>
+						<a class="share--tw" href="#">Twitter</a>
 					</div>
-					<!--
-					<ul class="poster__share">
-						<li><a class="share--fb" href="#">Facebook</a></li>
-						<li><a class="share--tw" href="#">Twitter</a></li>
-					</ul>
-
-				</figcaption>
-				<div class="poster__image">
-					<img src="public/images/poster-fpo.png" />
 				</div>
-			</figure>
+				<div class="poster__image">
+					<a href="#"><img src="public/images/poster-fpo.png" /></a>
+				</div>
+			</div>
+		</div>
+		<ul class="poster-nav">
+			<li class="poster-nav__prev"><a href="#">Prev</a></li>
+			<li class="poster-nav__next"><a href="#">Next</a></li>
+		</ul>
 	</section>
-  
+  <!--
 	<footer class="site-footer">
 		<p>&copy; Copyright 2016 30 Reasons. All rights reserved.</p>			
 	</footer>
+	-->
   
 </div>
 <!--/#Wrap-->

@@ -235,9 +235,10 @@ $layers: (
 /* For the breakpoint sass library */
 $breakpoint-to-ems: true;
 
-$bp-med: 748px;
+$bp-med: 760px;
 $bp-large: 1020px;
-$bp-x-large: 1200px;
+$bp-x-large: 1300px;
+$bp-xx-large: 1850px;
 
 //
 // Grid
@@ -259,6 +260,29 @@ $grid-paddings: (
 
 @function gridPadding($gp: base){
 	@return map-get($grid-paddings, $gp);
+}
+
+$view-units: (
+	hor: (
+		1-6: 16.5vw,
+		2-6: 33vw,
+		3-6: 50vw,
+		4-6: 66.5vw,
+		5-6: 83vw,
+		6-6: 100vw	
+	),
+	vert: (	
+		1-6: 16.5vh,
+		2-6: 33vh,
+		3-6: 50vh,
+		4-6: 66.5vh,
+		5-6: 83vh,
+		6-6: 100vh
+	)
+);
+
+@function viewUnit($dir: 'hor', $num: '1-6') {
+    @return map-get(map-get($view-units, $dir), $num);
 }
 
 // Susy grid

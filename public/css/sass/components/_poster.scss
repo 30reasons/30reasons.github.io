@@ -9,44 +9,18 @@ $num-offset: -150px;
 $num-height: 108px;
 $num-width: 66px;
 
-//$poster-offset-mobile: 133px;
-//$poster-offset-tablet: 192px;
-//$poster-offset-desktop: 124px;
-
 //
 // Styles
 
 .poster-slide {
-	margin: 0 gridPadding(base);
+	
 }
 .poster {
 	position: relative;
-	@include breakpoint($bp-large) {
-		min-height: 100vh;
-		display: flex;
-		align-items: flex-start;
-		.poster__info {
-			margin-right: space(standard);
-			width: 250px;
-		}
-		.poster__image {
-			flex: 1 1 auto;
-			align-self: flex-start;
-		}
-	}
-	@include breakpoint($bp-x-large) {
-		.poster__info {
-			width: 250px;;
-		}
-	}
 }
 
 .poster__info {
-	border-bottom: 1px solid palette(blue, x-light);
-	margin-bottom: space(mobile, small);
 	background-color: palette(white);
-	background-color: rgba(255,255,255,.8);
-		
 	> * {
 		border-top: 1px solid palette(blue, x-light);
 		margin-top: 0;
@@ -55,9 +29,7 @@ $num-width: 66px;
 
 .poster__artist,
 .poster__pubdate,
-.poster__description,
-.poster__share,
-.poster__toggle {
+.poster__description {
 	padding: space(mobile, x-small) 0;	
 	@include breakpoint($bp-med) {
 		padding: space(standard, x-small) 0;
@@ -69,6 +41,8 @@ $num-width: 66px;
 	position: relative;
 	display: block;
 	margin: 0;
+	margin-bottom: 3px;
+	margin-top: -5px;
 	height: $num-height;
 	width: $num-width*2;
 	text-indent: $num-width*3;
@@ -126,6 +100,9 @@ $num-width: 66px;
 }
 .poster__artist {
 	@extend .as-h2;
+	a {
+		text-decoration: none;
+	}
 }
 .poster__pubdate {
 	font-family: monospace;
@@ -136,58 +113,141 @@ $num-width: 66px;
 .poster__image {
 	margin-top: 0;
 	text-align: center;
-	max-width: 776px;
-	margin: 0 auto;
 	img {
 		@include zero;
 		display: inline-block;
 	}
 }
+
+//
+// Poster actions
+
+.poster__actions {
+	border-bottom: 1px solid palette(blue, x-light);
+	display: flex;
+	align-items: center;
+}
 .poster__toggle {
+	flex: 1 0 auto;
+	margin-right: 40px;
+	font-weight: fontWeight(body);
 	.no-js & {
 		display: none;
 	}
 	a {
 		margin-top: 0;
 	}
-	@include breakpoint(0 $bp-med) {
-		position: absolute;
-		top: $num-height + 3px; // the 1px is to account for the border
-		right: 0;
-		border: none;
+}
+.share--fb,
+.share--tw {
+	flex: 0 0 auto;
+	@include zero;
+	display: block;
+	width: 40px;
+	height: 34px;
+	text-indent: 100px;
+	overflow: hidden;
+	background: {
+		repeat: no-repeat;
+		position: center center;
+		//size: 100%;
+	}
+	&:hover {
+		opacity: .5;
 	}
 }
+.share--tw {
+	background-image: url(../images/icon-twitter.svg);
+}
+.share--fb {
+	background-image: url(../images/icon-facebook.svg);
+}
 
-.poster__share {
-	margin: 0;
-	text-align: left;
+//
+// Poster nav
+
+$next-big-x: -95px;
+$next-big-y: 0px;
+$prev-big-x: 0px;
+$prev-big-y: 0px;
+ 
+$next-small-x: -230px;
+$next-small-y: 0px;
+$prev-small-x: -190px;
+$prev-small-y: 0px;
+
+$next-big-y-hover: -95px;
+$prev-big-y-hover: -95px;
+$next-small-y-hover: -95px;
+$prev-small-y-hover: -95px;
+
+.poster-nav {
+	@include zero;
+	background-color: rgba(255,255,255,.8);
 	li {
 		@include zero;
-		display: inline-block;
 	}
 	a {
+		@include zero;
 		display: block;
-		width: 40px;
 		height: 40px;
+		width: 40px;
+		background: {
+			image: url(../images/icon-arrows.svg);
+			repeat: no-repeat;
+		}
 		text-indent: 100px;
 		overflow: hidden;
-		background: {
-			repeat: no-repeat;
-			position: center center;
-			size: 100%;
-		}
+	}
+	.poster-nav__prev {
+		padding-bottom: 7px;
+		border-bottom: 1px solid palette(blue, x-light);
+	}
+	.poster-nav__next {
+		padding-top: 7px;
+	}
+	.poster-nav__prev a {
+		background-position: $prev-small-x $prev-small-y;
 		&:hover {
-			opacity: .5;
+			background-position: $prev-small-x $prev-small-y-hover;
 		}
 	}
-	.share--tw {
-		background-image: url(../images/icon-twitter.svg);
+	.poster-nav__next a {
+		background-position: $next-small-x $next-small-y;
+		&:hover {
+			background-position: $next-small-x $next-small-y-hover;
+		}
 	}
-	.share--fb {
-		background-image: url(../images/icon-facebook.svg);
+	@include breakpoint($bp-large) {
+		li {
+			float: left;
+		}
+		a {
+			height: 95px;
+			width: 95px;
+		}
+		.poster-nav__prev {
+			padding: 0 space(standard) 0 0;
+			border-right: 1px solid palette(blue, x-light);
+			border-bottom-width: 0;
+		}
+		.poster-nav__next {
+			padding: 0 0 0 space(standard);
+		}
+		.poster-nav__prev a {
+			background-position: $prev-big-x $prev-big-y;
+			&:hover {
+				background-position: $prev-big-x $prev-big-y-hover;
+			}
+		}
+		.poster-nav__next a {
+			background-position: $next-big-x $next-big-y;
+			&:hover {
+				background-position: $next-big-x $next-big-y-hover;
+			}
+		}
 	}
 }
-
 //
 // States
 

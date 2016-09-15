@@ -2,34 +2,128 @@
 // Layout choreography
 //
 
+//
+// The wrapper
+
 #Wrap {
-	outline: 2px solid blue;
 	
-	@include breakpoint($bp-large) {
+	@include breakpoint($bp-med) {
 		display: flex;
-		min-height: 100vh;
+		min-height: viewUnit(vert, 6-6);
 		align-items: stretch;
-		.site-header {
-			width: 33%;
-			flex: 1 1 auto;
-			background-color: #ff0000;
-		}
-		.site-content {
-			flex: 1 1 auto;
-			background-color: palette(blue);
-			background-color: white;
-		}
-		.site-footer {
-			display: none;
-		}
-		
-		
 	}
-	
+
+}
+
+//
+// Site header
+
+.site-header {
+	@include breakpoint($bp-med) {
+		flex: 0 0 auto;
+		width: viewUnit(hor, 2-6);
+	}
+	@include breakpoint($bp-large) {
+		width: 25vw;
+	}
 	@include breakpoint($bp-x-large) {
-		.site-header {
-			width: 20%;
-		}
+		width: 20vw;
+	}
+	@include breakpoint($bp-xx-large) {
+		width: 20vw;
 	}
 }
 
+/*
+.site-header__inner {
+	@include breakpoint($bp-med) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: viewUnit(hor, 2-6);
+	}
+}
+*/
+
+.site-logo {
+	display: none;
+	@include breakpoint($bp-med) {
+		display: block;
+		position: fixed;
+		bottom: space(standard);
+		left: space(standard);
+		margin-left: -5px;
+		margin-bottom: -8px;
+	}
+}
+
+//
+// Site content
+
+.site-content {
+	@include breakpoint($bp-med) {
+		flex: 1 1 auto;
+	}
+}
+
+.poster {
+	@include breakpoint($bp-large) {
+		display: flex;
+		min-height: 100vh;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.poster__info {
+	padding: space(mobile);
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+	}
+	@include breakpoint($bp-large) {
+		flex: 0 0 auto;
+		align-self: flex-start;
+		width: 25vw;
+		padding-bottom: 135px; // clear some space for the nav
+		min-height: 100vh;
+	}
+	@include breakpoint($bp-x-large) {
+		width: 30vw;
+	}
+	@include breakpoint($bp-xx-large) {
+		width: 30vw;
+	}
+}
+
+.poster__image {
+	padding: space(mobile);
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+	}
+	@include breakpoint($bp-large) {
+		flex: 1 1 auto;
+		padding: space(standard);
+	}
+}
+
+.poster-nav {
+	position: absolute;
+	top: space(mobile);
+	right: space(mobile);
+	z-index: 10;
+
+	@include breakpoint($bp-large) {
+		position: fixed;
+		top: auto;
+		right: auto;
+		bottom: space(standard);
+		left: 25vw;
+		li:first-child {
+			margin-left: 16px;
+		}
+	}
+	
+	@include breakpoint($bp-x-large) {
+		left: 20vw;
+	}
+}
