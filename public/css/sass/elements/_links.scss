@@ -8,13 +8,13 @@ a {
 	outline: 0;
 	&:hover {
 		text-decoration: none;
-		color: palette(blue, light);
+		color: palette(blue, x-light);
 	}
 	&:visited {
 		color: palette(blue);
 	}
 	&:focus {
-		color: palette(blue, light);
+		color: palette(blue, x-light);
 	}
 }
 

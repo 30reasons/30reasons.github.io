@@ -102,6 +102,9 @@ $num-width: 66px;
 	@extend .as-h2;
 	a {
 		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 .poster__pubdate {
@@ -143,8 +146,8 @@ $num-width: 66px;
 	flex: 0 0 auto;
 	@include zero;
 	display: block;
-	width: 40px;
-	height: 34px;
+	width: 36px;
+	height: 36px;
 	text-indent: 100px;
 	overflow: hidden;
 	background: {
@@ -248,6 +251,7 @@ $prev-small-y-hover: -95px;
 		}
 	}
 }
+
 //
 // States
 
@@ -270,6 +274,58 @@ $prev-small-y-hover: -95px;
 		}
 		.poster__info-open {
 			display: none;
+		}
+	}
+}
+
+//
+// Poster thumbnails and grid
+
+.poster-grid {
+	padding: space(mobile);
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+		> li {
+			float: left;
+			width: 200px;
+			height: 200px;
+			//outline: 1px solid green;
+		}
+	}
+}
+.poster-thumb {
+	@include zero;
+	background-color: transparent;//palette(white);
+	> * {
+		border-top: 1px solid palette(blue, x-light);
+		margin-top: 0;
+	}
+	.poster__number {
+		border-top-width: 0;
+	}
+	.poster__pubdate {
+		border-bottom: 1px solid palette(blue, x-light);
+	}
+	.poster__number,
+	.poster__artist,
+	.poster__pubdate {
+		padding-left: space(standard, small);
+		padding-right: space(standard, small);
+	}
+	.poster__number {
+		margin-left: space(standard, small);
+		margin-top: space(standard, small);
+	}
+	.poster__image {
+		padding: space(standard, small);
+		border-top-width: 0;
+		img {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		a:hover img {
+			opacity: .7;
 		}
 	}
 }

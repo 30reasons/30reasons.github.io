@@ -21,10 +21,10 @@
 		font-weight: fontWeight(body);
 		color: palette(blue);
 		a {
-			display: block;
-			margin-top: space(standard, small);
-			color: palette(blue);
-			font-weight: fontWeight(headline);
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	
@@ -38,6 +38,10 @@
 		}
 	}
 	
+	a.site-logo:hover img {
+		opacity: .5;
+	} 
+	
 	@include breakpoint($bp-med) {
 		.site-header__inner {
 			padding: space(standard);
@@ -46,5 +50,21 @@
 			
 }
 
+//
+// Theming
+
+.all .site-header {
+	background-color: palette(blue);
+	background-image: none;
+	.positioning {
+		color: palette(blue, x-light);
+		strong {
+			color: white;
+		}
+	}
+	.main-nav a {
+		color: palette(white);
+	}
+}
 
 
