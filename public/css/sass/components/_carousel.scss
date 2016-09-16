@@ -1,0 +1,119 @@
+//
+// Carousel
+//
+
+.flickity-viewport {
+	margin-top: 0;
+}
+
+.poster-slide {
+	@include zero;
+	width: 100%;
+}
+
+// Fade in an image when it's loaded
+
+.carousel .poster__image img {
+  transition: opacity 0.5s;
+  opacity: .5;
+}
+.carousel .poster__image img.flickity-lazyloaded,
+.carousel .poster__image img.flickity-lazyerror {
+  opacity: 1;
+}
+
+//
+// Using flickity's previous/next buttons
+
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next {
+
+
+
+}
+
+//
+// Poster nav
+
+$next-big-x: -95px;
+$next-big-y: 0px;
+$prev-big-x: 0px;
+$prev-big-y: 0px;
+ 
+$next-small-x: -230px;
+$next-small-y: 0px;
+$prev-small-x: -190px;
+$prev-small-y: 0px;
+
+$next-big-y-hover: -95px;
+$prev-big-y-hover: -95px;
+$next-small-y-hover: -95px;
+$prev-small-y-hover: -95px;
+
+.poster-nav {
+	@include zero;
+	background-color: transparent;//rgba(255,255,255,.8);
+	li {
+		@include zero;
+	}
+	a {
+		@include zero;
+		display: block;
+		height: 40px;
+		width: 40px;
+		background: {
+			image: url(../images/icon-arrows.svg);
+			repeat: no-repeat;
+		}
+		text-indent: 100px;
+		overflow: hidden;
+	}
+	.poster-nav__prev {
+		padding-bottom: 7px;
+		border-bottom: 1px solid palette(blue, x-light);
+	}
+	.poster-nav__next {
+		padding-top: 7px;
+	}
+	.poster-nav__prev a {
+		background-position: $prev-small-x $prev-small-y;
+		&:hover {
+			background-position: $prev-small-x $prev-small-y-hover;
+		}
+	}
+	.poster-nav__next a {
+		background-position: $next-small-x $next-small-y;
+		&:hover {
+			background-position: $next-small-x $next-small-y-hover;
+		}
+	}
+	@include breakpoint($bp-large) {
+		li {
+			float: left;
+		}
+		a {
+			height: 95px;
+			width: 95px;
+		}
+		.poster-nav__prev {
+			padding: 0 space(standard) 0 0;
+			border-right: 1px solid palette(blue, x-light);
+			border-bottom-width: 0;
+		}
+		.poster-nav__next {
+			padding: 0 0 0 space(standard);
+		}
+		.poster-nav__prev a {
+			background-position: $prev-big-x $prev-big-y;
+			&:hover {
+				background-position: $prev-big-x $prev-big-y-hover;
+			}
+		}
+		.poster-nav__next a {
+			background-position: $next-big-x $next-big-y;
+			&:hover {
+				background-position: $next-big-x $next-big-y-hover;
+			}
+		}
+	}
+}

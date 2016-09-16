@@ -1,0 +1,29 @@
+//
+// Site about
+//
+
+.site-about {
+	position: relative;
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: space(mobile);
+	@include breakpoint($bp-med) {
+		padding: space(standard, x-large) space(standard) space(standard, large);
+	}
+	@include breakpoint($bp-large) {
+		.site-about__content {
+			column-count: 2;
+			column-gap: space(standard);
+		}
+	}
+	@include breakpoint($bp-x-large) {
+		.site-about__content {
+			column-count: 3;
+			column-gap: space(standard);
+		}
+	}
+}
+
+
+

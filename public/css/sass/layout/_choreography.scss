@@ -46,14 +46,22 @@
 */
 
 .site-logo {
-	display: none;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: space(mobile);
+	margin-right: -5px;
+	width: 20%;
 	@include breakpoint($bp-med) {
 		display: block;
 		position: fixed;
 		bottom: space(standard);
 		left: space(standard);
+		right: auto;
+		top: auto;
 		margin-left: -5px;
 		margin-bottom: -8px;
+		margin-right: 0;
 	}
 }
 
@@ -61,6 +69,7 @@
 // Site content
 
 .site-content {
+	overflow: hidden;
 	@include breakpoint($bp-med) {
 		flex: 1 1 auto;
 	}
@@ -91,7 +100,7 @@
 		width: 30vw;
 	}
 	@include breakpoint($bp-xx-large) {
-		width: 30vw;
+		width: 20vw;
 	}
 }
 

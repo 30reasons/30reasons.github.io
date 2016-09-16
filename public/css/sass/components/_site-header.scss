@@ -6,6 +6,10 @@
 	position: relative;
 	min-height: 25vh;
 	
+	* + * {
+		margin-top: space(mobile, small);
+	}
+	
 	background: {
 		image: url(../images/hillary-plane-tinted.jpg);
 		position: center top;
@@ -14,7 +18,7 @@
 	}
 	
 	.site-header__inner {
-		padding: space(mobile);
+		padding: space(mobile) 30% space(mobile) space(mobile);
 	}
 	
 	.positioning {
@@ -32,9 +36,19 @@
 		margin-top: space(mobile);
 		li {
 			font-weight: fontWeight(headline);
+			display: inline-block;
+			padding-right: 2px;
 		}
 		a {
+			display: inline-block;
+			padding: 3px 5px;
+			background-color: palette(white);
 			color: palette(blue);
+			text-decoration: none;
+			&:hover {
+				background-color: palette(blue);
+				color: palette(white);
+			}
 		}
 	}
 	
@@ -43,28 +57,19 @@
 	} 
 	
 	@include breakpoint($bp-med) {
+
+		* + * {
+			margin-top: space(standard, small);
+		}
+	
 		.site-header__inner {
 			padding: space(standard);
 		}
-	}	
+		
+		.main-nav li {
+			display: block;
+		}
+
+	}
 			
 }
-
-//
-// Theming
-
-.all .site-header {
-	background-color: palette(blue);
-	background-image: none;
-	.positioning {
-		color: palette(blue, x-light);
-		strong {
-			color: white;
-		}
-	}
-	.main-nav a {
-		color: palette(white);
-	}
-}
-
-

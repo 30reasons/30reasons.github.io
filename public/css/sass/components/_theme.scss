@@ -1,0 +1,43 @@
+//
+// Theming
+//
+
+.theme-blue {
+	.site-header {
+		background-color: palette(blue);
+		background-image: none;
+		color: palette(white);
+	}
+	.site-header .positioning {
+		color: palette(white);
+	}
+	.site-header .positioning strong {
+		color: palette(white);
+	}
+	.main-nav a:hover {
+		background-color: palette(blue, x-light);
+		color: palette(blue);
+	}
+}
+
+.theme-red {
+	.site-header {
+		background-color: palette(red);
+		background-image: none;
+		color: palette(white);
+	}
+	.site-header .positioning {
+		color: palette(white);
+	}
+	.site-header .positioning strong {
+		color: palette(white);
+	}
+	.main-nav a {
+		color: palette(red);
+	}
+	.main-nav a:hover {
+		background-color: palette(blue);
+		color: palette(white);
+	}
+}
+

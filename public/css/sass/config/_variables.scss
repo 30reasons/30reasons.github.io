@@ -115,7 +115,8 @@ $headline-color: palette(blue);
 $fontFamilies: (
 	base: ("adelle-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif),
 	headline: ("adelle-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif),
-	body: ("adelle-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif)
+	body: ("adelle-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif),
+	mono: ("Courier New", "Courier", monospace)
 );
 $fontWeights: (
 	base: 400,
