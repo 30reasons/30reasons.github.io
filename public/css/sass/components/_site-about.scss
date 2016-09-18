@@ -8,8 +8,14 @@
 	width: 100%;
 	margin: 0;
 	padding: space(mobile);
+	h2 {
+		margin-bottom: -1*space(mobile, small);
+	}
 	@include breakpoint($bp-med) {
-		padding: space(standard, x-large) space(standard) space(standard, large);
+		padding: space(standard, x-large) space(standard, medium) space(standard, large);
+		h2 {
+			margin-bottom: -1*space(standard, small);
+		}
 	}
 	@include breakpoint($bp-large) {
 		.site-about__content {

@@ -216,6 +216,10 @@ $prev-small-y-hover: -95px;
 		}
 		text-indent: 100px;
 		overflow: hidden;
+		&.is-disabled {
+			opacity: .2;
+			pointer-events: none;
+		}
 	}
 	.poster-nav__prev {
 		padding-bottom: 7px;
@@ -298,28 +302,44 @@ $prev-small-y-hover: -95px;
 
 .poster-grid {
 	padding: space(mobile);
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	> li {
+		width: 50%;
+	}
 	@include breakpoint($bp-med) {
 		padding: space(standard);
 		> li {
-			float: left;
-			width: 200px;
-			height: 200px;
-			//outline: 1px solid green;
+			width: 50%;
 		}
 	}
+	@include breakpoint($bp-large) {
+		padding: space(standard);
+		> li {
+			width: 33%;
+		}
+	}
+	@include breakpoint($bp-x-large) {
+		padding: space(standard);
+		> li {
+			width: 25%;
+		}
+	}
+	@include breakpoint($bp-xx-large) {
+		padding: space(standard);
+		> li {
+			width: 20%;
+		}
+	}
+	
 }
 .poster-thumb {
 	@include zero;
-	background-color: transparent;//palette(white);
+	background-color: transparent;
 	> * {
 		border-top: 1px solid palette(blue, x-light);
 		margin-top: 0;
-	}
-	.poster__number {
-		border-top-width: 0;
-	}
-	.poster__pubdate {
-		border-bottom: 1px solid palette(blue, x-light);
 	}
 	.poster__number,
 	.poster__artist,
@@ -328,8 +348,13 @@ $prev-small-y-hover: -95px;
 		padding-right: space(standard, small);
 	}
 	.poster__number {
+		border-top-width: 0;
 		margin-left: space(standard, small);
-		margin-top: space(standard, small);
+		margin-top: space(mobile, large);
+	}
+	.poster__pubdate {
+		border-bottom: 1px solid palette(blue, x-light);
+		margin-bottom: space(standard, small);
 	}
 	.poster__image {
 		padding: space(standard, small);
@@ -341,6 +366,11 @@ $prev-small-y-hover: -95px;
 		}
 		a:hover img {
 			opacity: .7;
+		}
+	}
+	@include breakpoint($bp-med) {
+		.poster__number {
+			margin-top: space(standard, large);
 		}
 	}
 }

@@ -6,10 +6,6 @@
 	position: relative;
 	min-height: 25vh;
 	
-	* + * {
-		margin-top: space(mobile, small);
-	}
-	
 	background: {
 		image: url(../images/hillary-plane-tinted.jpg);
 		position: center top;
@@ -57,13 +53,13 @@
 	} 
 	
 	@include breakpoint($bp-med) {
-
-		* + * {
-			margin-top: space(standard, small);
-		}
 	
 		.site-header__inner {
 			padding: space(standard);
+		}
+		
+		.main-nav {
+			margin-top: space(standard);
 		}
 		
 		.main-nav li {

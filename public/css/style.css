@@ -1244,6 +1244,9 @@ legend.is-visually-hidden + * {
     background-repeat: no-repeat;
     text-indent: 100px;
     overflow: hidden; }
+    .poster-nav a.is-disabled {
+      opacity: .2;
+      pointer-events: none; }
   .poster-nav .poster-nav__prev {
     padding-bottom: 7px;
     border-bottom: 1px solid #6B819A; }
@@ -1292,14 +1295,32 @@ legend.is-visually-hidden + * {
   display: none; }
 
 .poster-grid {
-  padding: 18px; }
+  padding: 18px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+  .poster-grid > li {
+    width: 50%; }
   @media (min-width: 47.5em) {
     .poster-grid {
       padding: 20px; }
       .poster-grid > li {
-        float: left;
-        width: 200px;
-        height: 200px; } }
+        width: 50%; } }
+  @media (min-width: 63.75em) {
+    .poster-grid {
+      padding: 20px; }
+      .poster-grid > li {
+        width: 33%; } }
+  @media (min-width: 81.25em) {
+    .poster-grid {
+      padding: 20px; }
+      .poster-grid > li {
+        width: 25%; } }
+  @media (min-width: 115.625em) {
+    .poster-grid {
+      padding: 20px; }
+      .poster-grid > li {
+        width: 20%; } }
 
 .poster-thumb {
   margin: 0;
@@ -1308,18 +1329,18 @@ legend.is-visually-hidden + * {
   .poster-thumb > * {
     border-top: 1px solid #6B819A;
     margin-top: 0; }
-  .poster-thumb .poster__number {
-    border-top-width: 0; }
-  .poster-thumb .poster__pubdate {
-    border-bottom: 1px solid #6B819A; }
   .poster-thumb .poster__number,
   .poster-thumb .poster__artist,
   .poster-thumb .poster__pubdate {
     padding-left: 10px;
     padding-right: 10px; }
   .poster-thumb .poster__number {
+    border-top-width: 0;
     margin-left: 10px;
-    margin-top: 10px; }
+    margin-top: 36px; }
+  .poster-thumb .poster__pubdate {
+    border-bottom: 1px solid #6B819A;
+    margin-bottom: 10px; }
   .poster-thumb .poster__image {
     padding: 10px;
     border-top-width: 0; }
@@ -1329,6 +1350,9 @@ legend.is-visually-hidden + * {
       padding: 0; }
     .poster-thumb .poster__image a:hover img {
       opacity: .7; }
+  @media (min-width: 47.5em) {
+    .poster-thumb .poster__number {
+      margin-top: 40px; } }
 
 .site-about {
   position: relative;
@@ -1336,9 +1360,13 @@ legend.is-visually-hidden + * {
   width: 100%;
   margin: 0;
   padding: 18px; }
+  .site-about h2 {
+    margin-bottom: -9px; }
   @media (min-width: 47.5em) {
     .site-about {
-      padding: 80px 20px 40px; } }
+      padding: 80px 30px 40px; }
+      .site-about h2 {
+        margin-bottom: -10px; } }
   @media (min-width: 63.75em) {
     .site-about .site-about__content {
       column-count: 2;
@@ -1360,8 +1388,6 @@ legend.is-visually-hidden + * {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat; }
-  .site-header * + * {
-    margin-top: 9px; }
   .site-header .site-header__inner {
     padding: 18px 30% 18px 18px; }
   .site-header .positioning {
@@ -1389,10 +1415,10 @@ legend.is-visually-hidden + * {
   .site-header a.site-logo:hover img {
     opacity: .5; }
   @media (min-width: 47.5em) {
-    .site-header * + * {
-      margin-top: 10px; }
     .site-header .site-header__inner {
       padding: 20px; }
+    .site-header .main-nav {
+      margin-top: 20px; }
     .site-header .main-nav li {
       display: block; } }
 
