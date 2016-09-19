@@ -1044,6 +1044,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/images\/30Reasons_BrettYasko_320px.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92969,
+		"inputAbbreviatedPath": "\/public\/images\/30Reasons_BrettYasko_320px.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/30Reasons_BrettYasko_320px.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/images\/accordian-arrow-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1545,6 +1556,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/js\/libs\/modernizr-3.2.0.base.js",
 		"outputAbbreviatedPath": "\/public\/js\/libs\/min\/modernizr-3.2.0.base-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/libs\/modernizr-3.3.1.svg-flex-flexwrap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/libs\/modernizr-3.3.1.svg-flex-flexwrap.js",
+		"outputAbbreviatedPath": "\/public\/js\/libs\/min\/modernizr-3.3.1.svg-flex-flexwrap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

@@ -11,8 +11,11 @@
 	.site-header .positioning {
 		color: palette(white);
 	}
-	.site-header .positioning strong {
+	.site-header .positioning a {
 		color: palette(white);
+	}
+	.site-header .positioning__number {
+		color: palette(red);
 	}
 	.main-nav a:hover {
 		background-color: palette(blue, x-light);
@@ -29,7 +32,7 @@
 	.site-header .positioning {
 		color: palette(white);
 	}
-	.site-header .positioning strong {
+	.site-header .positioning a {
 		color: palette(white);
 	}
 	.main-nav a {
