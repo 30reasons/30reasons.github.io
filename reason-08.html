@@ -23,27 +23,30 @@
 	<!-- CSS -->
 	<link href="public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<!-- Modernizr -->
-	<script src="public/js/libs/modernizr-3.2.0.base.js"></script>
+	<script src="public/js/libs/modernizr-3.3.1.svg-flex-flexwrap.js"></script>
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
-	<meta name="twitter:card" content="">
-	<meta name="twitter:site" content="">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:url" content="">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@30reasons" />
+	<meta name="twitter:title" content="Reason #8 by Brett Yasko" />
+	<meta name="twitter:description" content="Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?" />
+	<meta name="twitter:image" content="public/images/30reasons_BrettYasko_320px.jpg" />
 	<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
-	<meta property="og:title" content="" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="http://www.30reasons.com/reason-08.html" />
+	<meta property="og:title" content="Reason #8 by Brett Yasko" />
+	<meta property="og:description" content="Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?" />
 	<meta property="og:url" content="" />
-	<meta property="og:image" content="" />	
+	<meta property="og:image" content="public/images/30reasons_BrettYasko_320px.jpg" />	
+	<meta property="og:image:width" content="320" />
+	<meta property="og:image:height" content="320" />
 </head>
 
-<body class="theme-red">
+<body class="theme-blue">
 
 <div id="Wrap">
 
 	<header id="Top" class="site-header" role="banner">
 		<div class="site-header__inner">
-			<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President.<br><strong>This is Reason #8.</strong></h1>
+			<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President. <b class="positioning__number">This is Reason #8.</b></h1>
 			
 			<ul class="main-nav list">
 				<li><a href="index.html">30 Reasons home</a></li>
@@ -58,30 +61,44 @@
 	<section id="Content" class="site-content">
 		<div class="poster-slide">
 			<div id="P08" class="poster">
-				<div class="poster__info is-open">
+				<div class="poster__info is-closed">
 					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--8">9</span></div>
 					<div class="poster__artist">Brett Yasko</div>
-					<div class="poster__pubdate">Jul. 15</div>
+					<div class="poster__pubdate">Jul.15</div>
 					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare. Donec quis odio odio. Proin ut pulvinar dolor, nec elementum aante. Suspen disse potenti. Proin sagittis nisl quis ente porat suscipit. Nunc finibus accumasan turpis, sit amet dignissim magna dictum sit amet. Nulla vulputate et ex et tempus.</p>
+						<p>Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?</p>
 						<ul class="list">
-							<li><a href="#">www.mysite.com</a></li>
-							<li><a href="#">@mytwitter</a></li>
+							<li><a href="http://www.brettyasko.com">brettyasko.com</a></li>
 						</ul>
 					</div>
 					<div class="poster__actions">
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
+						<div class="action__toggle">
+							<a href="#P08" class="poster__info-open">Show info</a>
+							<a href="#P08" class="poster__info-close">Close info</a>
+						</div>
+						<span class="action__label">Share</span>
+						<div class="action__share">
+							<a class="share--fb" href="#">Facebook</a>
+							<a class="share--tw" href="#">Twitter</a>
+						</div>
 					</div>
-				</div>
+				</div>				
+
+<!--
+    {% if sharingMethods.contains('twitter') %}
+      <li><a href="http://twitter.com/intent/tweet?{{ {'text': shareTitle, 'url': craft.request.url}|url_encode }}" title="{{ 'Tweet this' | translate }}"><span class="iconshare-tw">{{ 'Tweet this' | translate }}</span></a></li>
+    {% endif %}
+    {% if sharingMethods.contains('facebook') %}
+      <li><a href="http://www.facebook.com/sharer.php?s=100&p[title]={{ shareTitle | url_encode }}&p[url]={{ craft.request.url | url_encode }}&p[summary]={{ shareTeaser | url_encode }}&p[images][0]={{ shareImage }}" title="{{ 'Share this' | translate }}"><span class="iconshare-fb">{{ 'Share this' | translate }}</span></a></li>
+-->
+				
 				<div class="poster__image">
-					<img src="public/images/poster-fpo.png" />
+					<img src="public/images/30Reasons_BrettYasko_800px.gif" />
 				</div>
 			</div>
 		</div>
 		<ul class="poster-nav">
-			<li class="poster-nav__prev"><a href="reason-07.html">Prev</a></li>
+			<li class="poster-nav__prev"><a href="reason-07.html#P07">Prev</a></li>
 			<li class="poster-nav__next"><a class="is-disabled" href="#" disabled>Next</a></li>
 		</ul>
 	</section>
