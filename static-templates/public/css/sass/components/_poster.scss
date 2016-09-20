@@ -1,0 +1,384 @@
+//
+// Poster
+//
+
+.poster {
+	position: relative;
+}
+
+.poster__info {
+	background-color: palette(white);
+	> * {
+		border-top: 1px solid palette(blue, x-light);
+		margin-top: 0;
+	}	
+}
+
+.poster__artist,
+.poster__pubdate,
+.poster__description {
+	padding: space(mobile, x-small) 0;	
+	@include breakpoint($bp-med) {
+		padding: space(standard, x-small) 0;
+	}
+}
+
+.poster__number {
+	border-top-width: 0;
+	position: relative;
+	display: block;
+	margin: 0;
+	margin-bottom: 3px;
+	margin-top: -5px;
+	height: sprite(number, h);
+	width: sprite(number, w)*2;
+	text-indent: sprite(number, w)*3;
+	overflow: hidden;
+	.number__tens,
+	.number__ones {
+		margin: 0;
+		display: block;
+		height: sprite(number, h);
+		width: sprite(number, w);
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: {
+			image: url(../images/30reasons-sprites.png);
+			position: left top;
+			repeat: no-repeat;
+			color: transparent;
+		}
+	}
+	.number__ones {
+		left: sprite(number, w);
+	}
+	.number--0 {
+		background-position: sprite(number, zero-x) sprite(number, zero-y);
+	}
+	.number--1 {
+		background-position: sprite(number, one-x) sprite(number, one-y);
+	}
+	.number--2 {
+		background-position: sprite(number, two-x) sprite(number, two-y);
+	}
+	.number--3 {
+		background-position: sprite(number, three-x) sprite(number, three-y);
+	}
+	.number--4 {
+		background-position: sprite(number, four-x) sprite(number, four-y);
+	}
+	.number--5 {
+		background-position: sprite(number, five-x) sprite(number, five-y);
+	}
+	.number--6 {
+		background-position: sprite(number, six-x) sprite(number, six-y);
+	}
+	.number--7 {
+		background-position: sprite(number, seven-x) sprite(number, seven-y);
+	}
+	.number--8 {
+		background-position: sprite(number, eight-x) sprite(number, eight-y);
+	}
+	.number--9 {
+		background-position: sprite(number, nine-x) sprite(number, nine-y);
+	}
+	
+}
+.poster__artist {
+	@extend .as-h2;
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.poster__pubdate {
+	font-family: fontFamily(mono);
+	font-weight: fontWeight(headline);
+}
+.poster__description {
+	> * + *{
+		margin-top: space(mobile, small);
+	}
+	@include breakpoint($bp-med) {
+		> * + * {
+			margin-top: space(standard, small);
+		}
+	}
+}
+.poster__image {
+	margin-top: 0;
+	text-align: center;
+	img {
+		@include zero;
+		display: inline-block;
+	}
+}
+
+//
+// Poster actions
+
+.poster__actions {
+	border-bottom: 1px solid palette(blue, x-light);
+	display: flex;
+	align-items: center;
+	font-family: fontFamily(mono);
+	* {
+		margin-top: 0;
+		font-weight: fontWeight(headline);
+	}	
+}
+.share--fb,
+.share--tw {
+	display: inline-block;
+	width: sprite(share, w);//36px;
+	height: sprite(share, h);//36px;
+	text-indent: sprite(share, w)*2;
+	overflow: hidden;
+	background: {
+		color: transparent;
+		image: url(../images/30reasons-sprites.png);
+		repeat: no-repeat;
+		position: center center;
+	}
+	transition: all .2s;
+	&:hover {
+		opacity: .5;
+	}
+}
+.share--tw {
+	background-position: sprite(share, twitter-x) sprite(share, twitter-y);
+}
+.share--fb {
+	background-position: sprite(share, facebook-x) sprite(share, facebook-y);
+}
+
+//
+// States
+
+.action__toggle {
+	display: none;
+}
+.action__label {
+	flex: 1 0 auto;
+}
+.action__share {
+	flex: 0 0 auto;
+}
+
+.js {
+
+	@include breakpoint(0 $bp-med) {
+		.action__toggle {
+			display: block;
+			flex: 1 0 auto;
+		}
+		.action__label {
+			flex: 0 0 auto;
+		}
+		.action__share {
+			flex: 0 0 auto;
+		}
+		.poster__info.is-closed {
+			.poster__pubdate,
+			.poster__description,
+			.poster__info-close {
+				display: none;
+			}
+			.poster__info-open {
+				display: block;
+			}
+		}
+		.poster__info.is-open {
+			.poster__pubdate,
+			.poster__description,
+			.poster__info-close {
+				display: block;
+			}
+			.poster__info-open {
+				display: none;
+			}
+		}
+	}
+	
+}
+
+//
+// Poster nav
+
+.poster-nav {
+	@include zero;
+	background-color: transparent;
+	li {
+		@include zero;
+	}
+	a {
+		@include zero;
+		display: block;
+		height: sprite(next-small, h);
+		width: sprite(next-small, w);
+		background: {
+			color: transparent;
+			image: url(../images/30reasons-sprites.png);
+			repeat: no-repeat;
+		}
+		text-indent: sprite(next-small, h)*2;
+		overflow: hidden;
+	}
+	.poster-nav__prev {
+		padding-bottom: 7px;
+		border-bottom: 1px solid palette(blue, x-light);
+	}
+	.poster-nav__next {
+		padding-top: 7px;
+	}
+	.poster-nav__prev a {
+		background-position: sprite(prev-small, x) sprite(prev-small, y);
+		&:hover {
+			background-position: sprite(prev-small, hover-x) sprite(prev-small, hover-y);
+		}
+		&.is-disabled {
+			background-position: sprite(prev-small, disabled-x) sprite(prev-small, disabled-y);
+			pointer-events: none;
+		}
+	}
+	.poster-nav__next a {
+		background-position: sprite(next-small, x) sprite(next-small, y);
+		&:hover {
+			background-position: sprite(next-small, hover-x) sprite(next-small, hover-y);
+		}
+		&.is-disabled {
+			background-position: sprite(next-small, disabled-x) sprite(next-small, disabled-y);
+			pointer-events: none;
+		}
+	}
+	@include breakpoint($bp-large) {
+		li {
+			float: left;
+		}
+		a {
+			height: sprite(next-large, w);
+			width: sprite(next-large, h);
+			text-indent: sprite(next-large, w)*2;
+		}
+		.poster-nav__prev {
+			padding: 0 space(standard) 0 0;
+			border-right: 1px solid palette(blue, x-light);
+			border-bottom-width: 0;
+		}
+		.poster-nav__next {
+			padding: 0 0 0 space(standard);
+		}
+		.poster-nav__prev a {
+			background-position: sprite(prev-large, x) sprite(prev-large, y);
+			&:hover {
+				background-position: sprite(prev-large, hover-x) sprite(prev-large, hover-y);
+			}
+			&.is-disabled {
+				background-position: sprite(prev-large, disabled-x) sprite(prev-large, disabled-y);
+			}
+		}
+		.poster-nav__next a {
+			background-position: sprite(next-large, x) sprite(next-large, y);
+			&:hover {
+				background-position: sprite(next-large, hover-x) sprite(next-large, hover-y);
+			}
+			&.is-disabled {
+				background-position: sprite(next-large, disabled-x) sprite(next-large, disabled-y);
+			}
+		}
+	}
+}
+
+//
+// Poster thumbnails and grid
+
+.poster-grid {
+	padding: space(mobile);
+	> li {
+		float: left;
+		width: 50%;
+		max-width: 320px;
+	}
+	@include breakpoint($bp-med) {
+		padding: space(standard);
+		> li {
+			width: 50%;
+		}
+	}
+	@include breakpoint($bp-large) {
+		> li {
+			width: 33%;
+		}
+	}
+	@include breakpoint($bp-x-large) {
+		> li {
+			width: 25%;
+		}
+	}
+	@include breakpoint($bp-xx-large) {
+		> li {
+			width: 20%;
+		}
+	}
+	@include breakpoint($bp-xxx-large) {
+		> li {
+			width: 16.666666%
+		}
+	}
+}
+.flexwrap .poster-grid {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	> li {
+		float: none;
+	}
+}
+
+.poster-thumb {
+	@include zero;
+	background-color: transparent;
+	> * {
+		border-top: 1px solid palette(blue, x-light);
+		margin-top: 0;
+	}
+	.poster__number,
+	.poster__artist,
+	.poster__pubdate {
+		padding-left: space(standard, small);
+		padding-right: space(standard, small);
+	}
+	.poster__number {
+		border-top-width: 0;
+		margin-left: space(standard, small);
+		margin-top: space(mobile, large);
+	}
+	.poster__pubdate {
+		border-bottom: 1px solid palette(blue, x-light);
+		margin-bottom: space(standard, small);
+	}
+	.poster__image {
+		padding: space(standard, small);
+		border-top-width: 0;
+		img {
+			display: block;
+			margin: 0;
+			padding: 0;
+			transition: all .2s;
+			transform-origin: center center;
+		}
+		a:hover img {
+			-webkit-filter: grayscale(1) brightness(80%);
+			filter: grayscale(1) brightness(80%);
+			transform: scale(.95);
+		}
+	}
+	@include breakpoint($bp-med) {
+		.poster__number {
+			margin-top: space(standard, large);
+		}
+	}
+}

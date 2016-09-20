@@ -1,0 +1,19 @@
+//
+// SVGs
+//
+
+//
+// Sprites
+// These are all the places where sprites are used. PNG is the default.
+// We swap to SVG if Modernizr's test passes for SVG support.
+.svg .site-header .site-logo,
+.svg .poster__number .number__tens,
+.svg .poster__number .number__ones,
+.svg .share--fb,
+.svg .share--tw,
+.svg .poster-nav a {
+	background-image: url(../images/30reasons-sprites.svg);
+}
+
+//
+// Body pattern
