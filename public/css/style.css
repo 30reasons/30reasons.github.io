@@ -452,10 +452,10 @@ p {
 
 blockquote {
   border-left: 1px solid #bfc1c3;
-  margin-top: 29.99999px;
-  margin-bottom: 29.99999px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 20px;
-  padding-right: 39.99999px;
+  padding-right: 40px;
   font-style: italic; }
 
 small {
@@ -491,14 +491,14 @@ sub, sup {
 hr {
   clear: both;
   display: block;
-  margin: 35.99999px 0 26.99999px;
+  margin: 36px 0 27px;
   padding: 0;
   height: 2px;
   border: 0;
   border-top: 1px solid #dee0e2; }
   @media (min-width: 47.5em) {
     hr {
-      margin: 39.99999px 0 29.99999px; } }
+      margin: 40px 0 30px; } }
 
 .list li + li {
   margin-top: 5px; }
@@ -919,7 +919,7 @@ legend.is-visually-hidden + * {
   min-height: 25vh; }
 
 .site-header__inner {
-  padding: 18px 120.99999px 18px 18px; }
+  padding: 18px 121px 18px 18px; }
 
 .site-logo {
   position: absolute;
@@ -1362,7 +1362,7 @@ legend.is-visually-hidden + * {
   .poster-thumb .poster__number {
     border-top-width: 0;
     margin-left: 10px;
-    margin-top: 35.99999px; }
+    margin-top: 36px; }
   .poster-thumb .poster__pubdate {
     border-bottom: 1px solid #6B819A;
     margin-bottom: 10px; }
@@ -1381,7 +1381,7 @@ legend.is-visually-hidden + * {
       transform: scale(0.95); }
   @media (min-width: 47.5em) {
     .poster-thumb .poster__number {
-      margin-top: 39.99999px; } }
+      margin-top: 40px; } }
 
 .site-about {
   position: relative;
@@ -1393,7 +1393,7 @@ legend.is-visually-hidden + * {
     margin-bottom: -9px; }
   @media (min-width: 47.5em) {
     .site-about {
-      padding: 79.99998px 29.99999px 39.99999px; }
+      padding: 80px 30px 40px; }
       .site-about h2 {
         margin-bottom: -10px; } }
   @media (min-width: 63.75em) {
