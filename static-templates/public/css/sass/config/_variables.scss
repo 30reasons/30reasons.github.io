@@ -126,8 +126,8 @@ $fontWeights: (
 	thin: 100
 );
 $fontSizes: (
-	base: 14px,
-	base-mobile: 13px,
+	base: 15px,// 14px
+	base-mobile: 14px,// 13px
 	base-em: 1em,
 	x-small: .625em,
 	small: .75em,
@@ -135,8 +135,8 @@ $fontSizes: (
 	x-large: 1.5em
 );
 $lineHeights: (
-	base: 1.42857143,
-	base-mobile: 1.38461538,
+	base: 1.333333,//1.42857143, // 20px
+	base-mobile: 1.285714,//1.38461538,
 	tight: 1.2,
 	flush: 1,
 	loose: 1.5
