@@ -14,7 +14,7 @@
   ga('send', 'pageview');
 </script>
 -->
-{% if include.useFlickity == "yes" %}
+{% if page.layout == 'home' %}
 	<script type="text/javascript" src="{{ site.github.url }}/public/js/libs/flickity.pkgd.min.js"></script>
 	<script type="text/javascript">
 	$('.carousel').flickity({

@@ -1538,13 +1538,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/fpo_square.png": {
+	"\/public\/images\/30reasons-pattern.gif": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 8694,
-		"inputAbbreviatedPath": "\/public\/images\/fpo_square.png",
-		"outputAbbreviatedPath": "\/public\/images\/fpo_square.png",
+		"inputAbbreviatedPath": "\/public\/images\/30reasons-pattern.gif",
+		"outputAbbreviatedPath": "\/public\/images\/30reasons-pattern.gif",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

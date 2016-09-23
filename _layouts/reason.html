@@ -11,8 +11,11 @@
 			<div id="P{{ page.numberTens }}{{ page.numberOnes }}" class="poster">
 				<div class="poster__info is-closed">
 					<div class="poster__number"><span class="number__tens number--{{ page.numberTens }}">{{ page.numberTens }}</span><span class="number__ones number--{{ page.numberOnes }}">{{ page.numberOnes }}</span></div>
-					<div class="poster__artist">{{ page.artist }}</div>
+					{% if page.artist %}
+						<div class="poster__artist">{{ page.artist }}</div>
+					{% endif %}
 					<div class="poster__pubdate">{{ page.pubDate }}</div>
+					{% if page.number <= site.currentReason %}
 					<div class="poster__description">
 						{{ content }}
 					</div>
@@ -29,6 +32,7 @@
 								<a class="share--tw" href="{{ twitterUrl }}">Twitter</a>
 							</div>
 					</div>
+					{% endif %}
 				</div>
 				
 				<div class="poster__image">
@@ -36,11 +40,6 @@
 				</div>
 			</div>
 		</div>
-
-		{#
-			Prev/next nav for collections via:
-			https://gist.github.com/budparr/3e637e575471401d01ec
-		#}
 		
 		{% capture the_collection %}{{ page.collection }}{% endcapture %}
 
@@ -54,7 +53,7 @@
 					{% assign prevurl = prev.url %}
 					{% assign prevtitle = prev.title %}
 				{% endunless %}
-				{% unless forloop.last or forloop.index == site.currentReason %}
+				{% unless forloop.last or forloop.index >= site.currentReason %}
 					{% assign next = document[forloop.index] %}
 					{% assign nexttitle = next.title %}
 					{% assign nexturl = next.url %}
@@ -63,7 +62,7 @@
 			{% assign prev = links %}
 		{% endfor %}
 
-		{% unless site.currentReason == 1 %}
+		{% unless site.currentReason == 1 or page.number > site.currentReason %}
 			<ul class="poster-nav">
 				<li class="poster-nav__prev">
 					{% if prevurl %}

@@ -13,11 +13,13 @@
 			<li class="poster-thumb">
 				{% if forloop.index <= site.currentReason %}
 					<div class="poster__image">
-						<a href="{{ site.github.url }}{{ reason.url }}"><img src="{{ site.github.url }}/public/images/{{ reason.image }}" /></a>
+						<a href="{{ site.github.url }}{{ reason.url }}"><img src="{{ site.github.url }}/public/images/{{ reason.thumbnail }}" /></a>
 					</div>
 				{% else %}
 					<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
-					<div class="poster__artist">{{ reason.artist }}</div>
+					{% if reason.artistShort or reason.artist %}
+					<div class="poster__artist">{% if reason.artistShort %}{{ reason.artistShort }}{% else %}{{ reason.artist }}{% endif %}</div>
+					{% endif %}
 					<div class="poster__pubdate">{{ reason.pubDate }}</div>
 				{% endif %}
 			</li>

@@ -1,15 +1,17 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
-title: Reason 3 by First M. Lastname
+title: Reason 3 by Brett Yasko
+number: 3
 numberTens: 0
 numberOnes: 3
-artist: First M. Lastname
-pubDate: Jul.20
-image: fpo_square.png
-thumbnail: fpo_square.png
+artist: Brett Yasko
+artistShort:
+pubDate: Sep.30
+image: 30Reasons_BrettYasko_800px.gif
+thumbnail: 30Reasons_BrettYasko_320px.jpg
 ---
 
-Description is here lorem ipsum dolor sit amet consecutat velorem dolor.
+Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?
 
-* [mysite.com](http://www.mysite.com)
+[brettyasko.com](http://www.brettyasko.com)

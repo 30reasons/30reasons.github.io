@@ -14,7 +14,9 @@
 					<div id="P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster">
 						<div class="poster__info is-closed">
 							<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
-							<div class="poster__artist"><a href="{{ site.github.url }}{{ reason.url }}">{{ reason.artist }}</a></div>
+							{% if reason.artist %}
+								<div class="poster__artist"><a href="{{ reason.url | prepend: site.github.url }}">{{ reason.artist }}</a></div>
+							{% endif %}
 							<div class="poster__pubdate">{{ reason.pubDate }}</div>
 							<div class="poster__description">
 								{{ reason.content }}
@@ -55,4 +57,4 @@
 </div>
 <!--/#Wrap-->
 {% assign reasonIndex = site.currentReason|minus:1 %}
-{% include _html-foot.html useFlickity="yes" index=reasonIndex %}
+{% include _html-foot.html index=reasonIndex %}

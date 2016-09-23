@@ -1,15 +1,17 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
+title: Reason 1 by The Original Champions of Design
+number: 1
 numberTens: 0
 numberOnes: 1
-title: Reason 1 by Brett Yasko
-artist: Brett Yasko
-pubDate: Jul.15
-image: 30Reasons_BrettYasko_800px.gif
-thumbnail: 30Reasons_BrettYasko_320px.jpg
+artist: The Original Champions of Design
+artistShort: OCD
+pubDate: Sep.28
+image: 30reasons-pattern.gif
+thumbnail: 30reasons-pattern.gif
 ---
 
-Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?
+Description here.
 
-[brettyasko.com](http://www.brettyasko.com)
+[originalchampionsofdesign.com](http://www.originalchampionsofdesign.com)

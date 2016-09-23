@@ -1,15 +1,17 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
-title: Reason 5 by Jen Lucas
+title: Reason 5
+number: 5
 numberTens: 0
 numberOnes: 5
-artist: Jen Lucas
-pubDate: Jul.22
-image: fpo_square.png
-thumbnail: fpo_square.png
+artist:
+artistShort: ---
+pubDate: Oct.04
+image: 30reasons-pattern.gif
+thumbnail: 30reasons-pattern.gif
 ---
 
-Description is here lorem ipsum dolor sit amet consecutat velorem dolor.
+Description here.
 
-* [mysite.com](http://www.mysite.com)
+[someurl.com](http://www.someurl.com)
