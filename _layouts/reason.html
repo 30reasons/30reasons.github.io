@@ -22,8 +22,8 @@
 							<a href="#P{{ page.numberTens }}{{ page.numberOnes }}" class="poster__info-close">Close info</a>
 						</div>
 						<span class="action__label">Share:</span>
-							{% capture twitterUrl %}http://twitter.com/intent/tweet?text={{ page.title|url_encode }}&url={{ site.siteUrl|url_encode }}{{ page.url|url_encode }}{% endcapture %}
-							{% capture facebookUrl %}https://www.facebook.com/sharer/sharer.php?u={{ site.siteUrl|url_encode }}{{ page.url|url_encode }}{% endcapture %}
+							{% capture twitterUrl %}http://twitter.com/intent/tweet?text={{ page.title|url_encode }}&url={{ site.github.url|url_encode }}{{ page.url|url_encode }}{% endcapture %}
+							{% capture facebookUrl %}https://www.facebook.com/sharer/sharer.php?u={{ site.github.url|url_encode }}{{ page.url|url_encode }}{% endcapture %}
 							<div class="action__share">
 								<a class="share--fb" href="{{ facebookUrl }}">Facebook</a>
 								<a class="share--tw" href="{{ twitterUrl }}">Twitter</a>
