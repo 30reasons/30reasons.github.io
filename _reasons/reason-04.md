@@ -6,7 +6,7 @@ number: 4
 numberTens: 0
 numberOnes: 4
 artist: Julia Thomas
-artistShort:
+artistShort: ---
 pubDate: Oct.03
 image: 30Reasons_JuliaThomas_800px.gif
 thumbnail: 30Reasons_JuliaThomas_320px.jpg
