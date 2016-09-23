@@ -1399,7 +1399,9 @@ legend.is-visually-hidden + * {
   @media (min-width: 63.75em) {
     .site-about .site-about__content {
       column-count: 2;
-      column-gap: 20px; } }
+      column-gap: 20px; }
+    .site-about h1 {
+      column-span: all; } }
   @media (min-width: 81.25em) {
     .site-about .site-about__content {
       column-count: 3;
@@ -1467,6 +1469,12 @@ legend.is-visually-hidden + * {
       margin-top: 20px; }
     .site-header .main-nav li {
       display: block; } }
+
+.sec-home #NavHome {
+  display: none; }
+
+.sec-all #NavAll {
+  display: none; }
 
 .site-footer {
   padding: 18px;

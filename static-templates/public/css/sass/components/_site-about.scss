@@ -22,6 +22,9 @@
 			column-count: 2;
 			column-gap: space(standard);
 		}
+		h1 {
+			column-span: all;
+		}
 	}
 	@include breakpoint($bp-x-large) {
 		.site-about__content {

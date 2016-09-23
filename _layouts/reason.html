@@ -1,0 +1,80 @@
+{% if page.myNumber > 9 %}
+	{% assign reasonTens = page.myNumber|slice:0 %}
+{% else %}
+	{% assign reasonTens = 0 %}
+{% endif %}
+{% assign reasonOnes = page.myNumber|slice:-1 %}
+
+{% assign nextReason = page.myNumber|plus:1 %}
+{% assign prevReason = page.myNumber|minus:1 %}
+
+{% include _html-head.html %}
+
+<body class="{{ page.bodyClass }}">
+
+<div id="Wrap">
+
+	{% include _global-head.html %}
+
+	<section id="Content" class="site-content">
+		<div class="poster-slide">
+			<div id="P{{ reasonTens }}{{ reasonOnes }}" class="poster">
+				<div class="poster__info is-closed">
+					<div class="poster__number"><span class="number__tens number--{{ reasonTens }}">{{ reasonTens }}</span><span class="number__ones number--{{ reasonOnes }}">{{ reasonOnes }}</span></div>
+					<div class="poster__artist">{{ page.artist }}</div>
+					<div class="poster__pubdate">{{ page.pubDate }}</div>
+					<div class="poster__description">
+						{{ content }}
+					</div>
+					<div class="poster__actions">
+						<div class="action__toggle">
+							<a href="#P{{ reasonTens }}{{ reasonOnes }}" class="poster__info-open">Show info</a>
+							<a href="#P{{ reasonTens }}{{ reasonOnes }}" class="poster__info-close">Close info</a>
+						</div>
+						<span class="action__label">Share</span>
+						<div class="action__share">
+							<a class="share--fb" href="#">Facebook</a>
+							<a class="share--tw" href="#">Twitter</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="poster__image">
+					<img src="{{ site.siteUrl }}public/images/{{ page.image }}" />
+				</div>
+			</div>
+		</div>
+		<ul class="poster-nav">
+			<li class="poster-nav__prev">
+				{% if prevReason < 1 %}
+					<a class="is-disabled" href="#">Prev</a>
+				{% else %}
+					{% if prevReason > 9 %}
+						{% assign prevReasonTens = prevReason|slice:0 %}
+					{% else %}
+						{% assign prevReasonTens = 0 %}
+					{% endif %}
+					{% assign prevReasonOnes = prevReason|slice:-1 %}
+					<a href="../reason-{{ prevReasonTens }}{{ prevReasonOnes }}/index.html#P{{ prevReasonTens }}{{ prevReasonOnes }}">Prev</a>
+				{% endif %}
+			</li>
+			<li class="poster-nav__next">
+				{% if nextReason > 30 %}
+					<a class="is-disabled" href="#">Next</a>
+				{% else %}
+					{% if nextReason > 9 %}
+						{% assign nextReasonTens = nextReason|slice:0 %}
+					{% else %}
+						{% assign nextReasonTens = 0 %}
+					{% endif %}
+					{% assign nextReasonOnes = nextReason|slice:-1 %}
+					<a href="../reason-{{ nextReasonTens }}{{ nextReasonOnes }}/index.html#P{{ nextReasonTens }}{{ nextReasonOnes }}">Prev</a>
+				{% endif %}
+			</li>
+		</ul>
+	</section>
+  
+</div>
+<!--/#Wrap-->
+
+{% include _html-foot.html useFlickity="no" %}

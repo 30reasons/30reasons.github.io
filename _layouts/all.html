@@ -1,0 +1,44 @@
+{% include _html-head.html %}
+
+<body class="{{ page.bodyClass }}">
+
+<div id="Wrap">
+
+	{% include _global-head.html %}
+
+	<section id="Content" class="site-content">
+
+		<ul class="poster-grid">
+			{% for reason in site.reasons %}
+			<li class="poster-thumb">
+				{% if reason.image %}
+					<div class="poster__image">
+						<a href="{{ reason.url }}"><img src="{{ site.siteUrl }}public/images/{{ reason.image }}" /></a>
+					</div>
+				{% else %}
+					<div class="poster__number"><span class="number__tens number--{{ reason.reasonTens }}">{{ reason.reasonTens }}</span><span class="number__ones number--{{ reason.reasonOnes }}">{{ reason.reasonOnes }}</span></div>
+					<div class="poster__artist">{{ reason.artist }}</div>
+					<div class="poster__pubdate">{{ reason.pubDate }}</div>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+		
+		<section id="About" class="site-about">
+			
+			<h1>About 30 Reasons</h1>
+			
+			<div class="site-about__content">
+		
+			{{ content }}
+
+			</div>
+						
+		</section>
+			
+	</section>
+  
+</div>
+<!--/#Wrap-->
+
+{% include _html-foot.html useFlickity="no" %}

@@ -18,12 +18,12 @@
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="favicon.ico" />	 
-	<link rel="apple-touch-icon" href="apple-touch-icon.png"" />
+	<link rel="shortcut icon" href="http://127.0.0.1:4000/favicon.ico" />	 
+	<link rel="apple-touch-icon" href="http://127.0.0.1:4000/apple-touch-icon.png"" />
 	<!-- CSS -->
-	<link href="public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="http://127.0.0.1:4000/public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<!-- Modernizr -->
-	<script src="public/js/libs/modernizr-3.3.1.svg-flex-flexwrap.js"></script>
+	<script src="http://127.0.0.1:4000/public/js/libs/modernizr-3.3.1.svg-flex-flexwrap.js"></script>
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 	<meta name="twitter:card" content="">
 	<meta name="twitter:site" content="">
@@ -35,264 +35,149 @@
 	<meta property="og:description" content="" />
 	<meta property="og:url" content="" />
 	<meta property="og:image" content="" />	
-	<link rel="stylesheet" type="text/css" href="public/css/libs/flickity.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000/public/css/libs/flickity.min.css"/>
 </head>
-
-<body>
+<body class="sec-home">
 
 <div id="Wrap">
 
 	<header id="Top" class="site-header" role="banner">
-		<div class="site-header__inner">
-			<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President.</h1>
-			<ul class="main-nav list">
-				<li><a href="all.html">View all posters</a></li>
-				<li><a class="js-animate-scroll" href="all.html#About">About 30 Reasons</a></li>
-				<li><a href="#">Donate to Hillary’s campaign</a></li>
-			</ul>
-			<div class="site-logo">30R</div>
-		</div>
-	</header>
-
+	<div class="site-header__inner">
+		<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President.</h1>
+		<ul class="main-nav list">
+			<li id="NavHome"><a href="http://127.0.0.1:4000/">Home</a></li>
+			<li id="NavAll"><a href="http://127.0.0.1:4000/all.html">View all posters</a></li>
+			<li id="NavAbout"><a class="js-animate-scroll" href="http://127.0.0.1:4000/all.html#About">About 30 Reasons</a></li>
+			<li id="NavDonate"><a href="#">Donate to Hillary’s campaign</a></li>
+		</ul>
+		<div class="site-logo">30R</div>
+	</div>
+</header>
+	
 	<section id="Content" class="site-content carousel">
-		<div class="poster-slide">
-			<div id="P01" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--1">1</span></div>
-					<div class="poster__artist"><a href="reason-01.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P01" class="poster__info-open">Show info</a>
-							<a href="#P01" class="poster__info-close">Close info</a>
+	
+		
+		
+			
+				
+				<div class="poster-slide">
+					<div id="P" class="poster">
+						<div class="poster__info is-closed">
+							<div class="poster__number"><span class="number__tens number--"></span><span class="number__ones number--"></span></div>
+							<div class="poster__artist"><a href="/reasons/reason-01/">Brett Yasko</a></div>
+							<div class="poster__pubdate">Jul.15</div>
+							<div class="poster__description">
+								<p>Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?</p>
+<ul class="list">
+	<li><a href="http://www.brettyasko.com">brettyasko.com</a></li>
+</ul>
+							</div>
+							<div class="poster__actions">
+								<div class="action__toggle">
+									<a href="#P" class="poster__info-open">Show info</a>
+									<a href="#P" class="poster__info-close">Close info</a>
+								</div>
+								<span class="action__label">Share:</span>
+								<div class="action__share">
+									<a class="share--fb" href="#">Facebook</a>
+									<a class="share--tw" href="#">Twitter</a>
+								</div>
+							</div>
 						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-01.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P02" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--2">2</span></div>
-					<div class="poster__artist"><a href="reason-02.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P02" class="poster__info-open">Show info</a>
-							<a href="#P02" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-02.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P03" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--3">3</span></div>
-					<div class="poster__artist"><a href="reason-03.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P03" class="poster__info-open">Show info</a>
-							<a href="#P03" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-03.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P04" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--4">4</span></div>
-					<div class="poster__artist"><a href="reason-04.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P04" class="poster__info-open">Show info</a>
-							<a href="#P04" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-04.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P05" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--5">5</span></div>
-					<div class="poster__artist"><a href="reason-05.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P05" class="poster__info-open">Show info</a>
-							<a href="#P05" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-05.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P06" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--6">6</span></div>
-					<div class="poster__artist"><a href="reason-06.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P06" class="poster__info-open">Show info</a>
-							<a href="#P06" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-06.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P07" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--7">7</span></div>
-					<div class="poster__artist"><a href="reason-07.html">First Lastname</a></div>
-					<div class="poster__pubdate">Mon.XX</div>
-					<div class="poster__description">
-						<p>Description here lorem ipsum dolor sit amet vestibulum ante ipsum primis en faucibus orciluctus et ultireces posuere cubilia Curare. Donec quis odio odio. Proin ut pulvinar dolor, nec elementum aante. Suspen disse potenti. Proin sagittis nisl quis ente porat suscipit.</p><p>Nunc finibus accumasan turpis, sit amet dignissim magna dictum sit amet. Nulla vulputate et ex et tempus.</p>
-						<ul class="list">
-							<li><a href="#">@mytwitter</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="poster__toggle">
-							<a href="#P07" class="poster__info-open">Show info</a>
-							<a href="#P07" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<a class="share--fb" href="#">Facebook</a>
-						<a class="share--tw" href="#">Twitter</a>
-					</div>
-				</div>
-				<div class="poster__image">
-					<a href="reason-07.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/fpo_square.png" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="poster-slide">
-			<div id="P08" class="poster">
-				<div class="poster__info is-closed">
-					<div class="poster__number"><span class="number__tens number--0">0</span><span class="number__ones number--8">8</span></div>
-					<div class="poster__artist"><a href="reason-08.html">Brett Yasko</a></div>
-					<div class="poster__pubdate">Jul.15</div>
-					<div class="poster__description">
-						<p>Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?</p>
-						<ul class="list">
-							<li><a href="http://www.brettyasko.com">brettyasko.com</a></li>
-						</ul>
-					</div>
-					<div class="poster__actions">
-						<div class="action__toggle">
-							<a href="#P08" class="poster__info-open">Show info</a>
-							<a href="#P08" class="poster__info-close">Close info</a>
-						</div>
-						<span class="action__label">Share:</span>
-						<div class="action__share">
-							<a class="share--fb" href="#">Facebook</a>
-							<a class="share--tw" href="#">Twitter</a>
+						<div class="poster__image">
+							<a href="/reasons/reason-01/"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="http://127.0.0.1:4000/public/images/30Reasons_BrettYasko_800px.gif" /></a>
 						</div>
 					</div>
 				</div>
-				<div class="poster__image">
-					<a href="reason-08.html"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="public/images/30Reasons_BrettYasko_800px.gif" /></a>
+			
+		
+		
+			
+				
+				<div class="poster-slide">
+					<div id="P" class="poster">
+						<div class="poster__info is-closed">
+							<div class="poster__number"><span class="number__tens number--"></span><span class="number__ones number--"></span></div>
+							<div class="poster__artist"><a href="/reasons/reason-02/">First Lastname</a></div>
+							<div class="poster__pubdate">Jul.16</div>
+							<div class="poster__description">
+								<p>Description is here lorem ipsum dolor sit amet consecutat velorem dolor.</p>
+<ul class="list">
+	<li><a href="http://www.mysite.com">mysite.com</a></li>
+</ul>
+							</div>
+							<div class="poster__actions">
+								<div class="action__toggle">
+									<a href="#P" class="poster__info-open">Show info</a>
+									<a href="#P" class="poster__info-close">Close info</a>
+								</div>
+								<span class="action__label">Share:</span>
+								<div class="action__share">
+									<a class="share--fb" href="#">Facebook</a>
+									<a class="share--tw" href="#">Twitter</a>
+								</div>
+							</div>
+						</div>
+						<div class="poster__image">
+							<a href="/reasons/reason-02/"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="http://127.0.0.1:4000/public/images/fpo_square.png" /></a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			
+		
+		
+			
+				
+				<div class="poster-slide">
+					<div id="P" class="poster">
+						<div class="poster__info is-closed">
+							<div class="poster__number"><span class="number__tens number--"></span><span class="number__ones number--"></span></div>
+							<div class="poster__artist"><a href="/reasons/reason-03/">First M. Lastname</a></div>
+							<div class="poster__pubdate">Jul.20</div>
+							<div class="poster__description">
+								<p>Description is here lorem ipsum dolor sit amet consecutat velorem dolor.</p>
+<ul class="list">
+	<li><a href="http://www.mysite.com">mysite.com</a></li>
+</ul>
+							</div>
+							<div class="poster__actions">
+								<div class="action__toggle">
+									<a href="#P" class="poster__info-open">Show info</a>
+									<a href="#P" class="poster__info-close">Close info</a>
+								</div>
+								<span class="action__label">Share:</span>
+								<div class="action__share">
+									<a class="share--fb" href="#">Facebook</a>
+									<a class="share--tw" href="#">Twitter</a>
+								</div>
+							</div>
+						</div>
+						<div class="poster__image">
+							<a href="/reasons/reason-03/"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="http://127.0.0.1:4000/public/images/fpo_square.png" /></a>
+						</div>
+					</div>
+				</div>
+			
+		
+		
+			
+				
+
 		<ul class="poster-nav">
 			<li class="poster-nav__prev"><a class="js-animate-scroll" href="#Content">Prev</a></li>
 			<li class="poster-nav__next"><a class="js-animate-scroll" href="#Content">Next</a></li>
 		</ul>
+
 	</section>
-  <!--
-	<footer class="site-footer">
-		<p>&copy; Copyright 2016 30 Reasons. All rights reserved.</p>			
-	</footer>
-	-->
   
 </div>
 <!--/#Wrap-->
 
 <!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='public/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
-<!--<script src="public/js/libs/jquery-1.11.3.min.js"></script>-->
+<script>window.jQuery || document.write("<script src='http://127.0.0.1:4000/public/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
 <!-- Custom functions-->
-<script src="public/js/min/functions-min.js"></script>
+<script src="http://127.0.0.1:4000/public/js/min/functions-min.js"></script>
 <script>$(document).ready(initPage);</script>
 <!-- GA
 <script>
@@ -304,24 +189,26 @@
   ga('send', 'pageview');
 </script>
 -->
-<script type="text/javascript" src="public/js/libs/flickity.pkgd.min.js"></script>
-<script type="text/javascript">
-$('.carousel').flickity({
-		// options
-		cellAlign: 'left',
-		cellSelector: '.poster-slide',
-		initialIndex: 7, // 0-based index of first slide
-		lazyLoad: true, // Set to "1" to load 1 image on either side of the current
-		pageDots: false,
-		prevNextButtons: false,
-		wrapAround: true
-	});
-	$('.poster-nav__next').on( 'click', function() {
-		$('.carousel').flickity('next');
-	});
-	$('.poster-nav__prev').on( 'click', function() {
-		$('.carousel').flickity('previous');
-	});
-</script>
+
+	<script type="text/javascript" src="http://127.0.0.1:4000/public/js/libs/flickity.pkgd.min.js"></script>
+	<script type="text/javascript">
+	$('.carousel').flickity({
+			// options
+			cellAlign: 'left',
+			cellSelector: '.poster-slide',
+			initialIndex: 0, // 0-based index of first slide
+			lazyLoad: true, // Set to "1" to load 1 image on either side of the current
+			pageDots: false,
+			prevNextButtons: false,
+			wrapAround: true
+		});
+		$('.poster-nav__next').on( 'click', function() {
+			$('.carousel').flickity('next');
+		});
+		$('.poster-nav__prev').on( 'click', function() {
+			$('.carousel').flickity('previous');
+		});
+	</script>
+
 </body>
 </html>

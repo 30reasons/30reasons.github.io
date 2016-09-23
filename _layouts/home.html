@@ -1,0 +1,55 @@
+{% include _html-head.html %}
+<body class="{{ page.bodyClass }}">
+
+<div id="Wrap">
+
+	{% include _global-head.html %}
+	
+	<section id="Content" class="site-content carousel">
+	
+		{% for reason in site.reasons %}
+		
+			{% if reason.image %}
+				{% assign layout.currentReason = forloop.index %}
+				<div class="poster-slide">
+					<div id="P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster">
+						<div class="poster__info is-closed">
+							<div class="poster__number"><span class="number__tens number--{{ reason.reasonTens }}">{{ reason.reasonTens }}</span><span class="number__ones number--{{ reason.reasonOnes }}">{{ reason.reasonOnes }}</span></div>
+							<div class="poster__artist"><a href="{{ reason.url }}">{{ reason.artist }}</a></div>
+							<div class="poster__pubdate">{{ reason.pubDate }}</div>
+							<div class="poster__description">
+								{{ reason.content }}
+							</div>
+							<div class="poster__actions">
+								<div class="action__toggle">
+									<a href="#P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster__info-open">Show info</a>
+									<a href="#P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster__info-close">Close info</a>
+								</div>
+								<span class="action__label">Share:</span>
+								<div class="action__share">
+									<a class="share--fb" href="#">Facebook</a>
+									<a class="share--tw" href="#">Twitter</a>
+								</div>
+							</div>
+						</div>
+						<div class="poster__image">
+							<a href="{{ reason.url }}"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="{{ site.siteUrl }}public/images/{{ reason.image }}" /></a>
+						</div>
+					</div>
+				</div>
+			{% else %}
+				{% break %}
+			{% endif %}
+		{% endfor %}
+
+		<ul class="poster-nav">
+			<li class="poster-nav__prev"><a class="js-animate-scroll" href="#Content">Prev</a></li>
+			<li class="poster-nav__next"><a class="js-animate-scroll" href="#Content">Next</a></li>
+		</ul>
+
+	</section>
+  
+</div>
+<!--/#Wrap-->
+{% assign reasonIndex = site.currentReason|minus:1 %}
+{% include _html-foot.html useFlickity="yes" index=reasonIndex %}
