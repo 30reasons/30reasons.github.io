@@ -1,10 +1,10 @@
 <header id="Top" class="site-header" role="banner">
 	<div class="site-header__inner">
-		<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President.</h1>
+		<h1 class="positioning as-h2"><strong>30 Reasons</strong> is a 30-poster campaign encouraging voters to support Hillary Clinton for President.{% if include.number %} <b class="positioning__number">This is reason #{{ include.number}}.</b>{% endif %}</h1>
 		<ul class="main-nav list">
 			<li id="NavHome"><a href="{{ site.siteUrl }}">Home</a></li>
-			<li id="NavAll"><a href="{{ site.siteUrl}}all.html">View all posters</a></li>
-			<li id="NavAbout"><a class="js-animate-scroll" href="{{ site.siteUrl }}all.html#About">About 30 Reasons</a></li>
+			<li id="NavAll"><a href="{{ site.siteUrl}}reasons/">View all posters</a></li>
+			<li id="NavAbout"><a class="js-animate-scroll" href="{{ site.siteUrl }}/reasons/index.html#About">About 30 Reasons</a></li>
 			<li id="NavDonate"><a href="#">Donate to Hillary’s campaign</a></li>
 		</ul>
 		<div class="site-logo">30R</div>

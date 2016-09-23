@@ -10,11 +10,10 @@
 		{% for reason in site.reasons %}
 		
 			{% if reason.image %}
-				{% assign layout.currentReason = forloop.index %}
 				<div class="poster-slide">
-					<div id="P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster">
+					<div id="P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster">
 						<div class="poster__info is-closed">
-							<div class="poster__number"><span class="number__tens number--{{ reason.reasonTens }}">{{ reason.reasonTens }}</span><span class="number__ones number--{{ reason.reasonOnes }}">{{ reason.reasonOnes }}</span></div>
+							<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
 							<div class="poster__artist"><a href="{{ reason.url }}">{{ reason.artist }}</a></div>
 							<div class="poster__pubdate">{{ reason.pubDate }}</div>
 							<div class="poster__description">
@@ -22,8 +21,8 @@
 							</div>
 							<div class="poster__actions">
 								<div class="action__toggle">
-									<a href="#P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster__info-open">Show info</a>
-									<a href="#P{{ reason.reasonOnes }}{{reason.reasonTens }}" class="poster__info-close">Close info</a>
+									<a href="#P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster__info-open">Show info</a>
+									<a href="#P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster__info-close">Close info</a>
 								</div>
 								<span class="action__label">Share:</span>
 								<div class="action__share">

@@ -2,6 +2,7 @@
 layout: all
 title: All reasons
 bodyClass: sec-all theme-blue
+permalink: reasons/index.html
 ---
 
 When 30 Reasons first formed in 2008, it was a time of great optimism. America was on the verge electing its first black President, a candidate who stood for hope and change. In the 8 years that followed, that change looked beautiful: universal healthcare, marriage equality, an end to the Iraq war.
