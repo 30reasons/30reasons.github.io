@@ -23,4 +23,4 @@ Your questions or comments are welcome. Please direct all correspondence to [inf
 
 The website was designed and built by Adam Snetman, founder of [Starting Now](http://www.startingnow.co).
 
-Posters were generously contributed by <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, <a href="#">First Lastname</a>, and <a href="#">First Lastname</a>.
+Posters were generously contributed by [Brett Yasko](/reasons/reason-01.html) and others.
