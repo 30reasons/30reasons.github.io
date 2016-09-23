@@ -6,7 +6,7 @@ number: 2
 numberTens: 0
 numberOnes: 2
 artist: Bonnie Siegler
-artistShort:
+artistShort: ---
 pubDate: Sep.29
 image: 30Reasons_BonnieSiegler_800px.jpg
 thumbnail: 30Reasons_BonnieSiegler_320px.jpg
