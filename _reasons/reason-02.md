@@ -2,15 +2,14 @@
 layout: reason
 bodyClass: sec-reason theme-blue
 title: Reason 2 by First Lastname
-number: 2
 numberTens: 0
 numberOnes: 2
 artist: First Lastname
 pubDate: Jul.16
 image: fpo_square.png
+thumbnail: fpo_square.png
 ---
 
-<p>Description is here lorem ipsum dolor sit amet consecutat velorem dolor.</p>
-<ul class="list">
-	<li><a href="http://www.mysite.com">mysite.com</a></li>
-</ul>
+Description is here lorem ipsum dolor sit amet consecutat velorem dolor.
+
+* [mysite.com](http://www.mysite.com)

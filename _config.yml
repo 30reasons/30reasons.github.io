@@ -1,8 +1,7 @@
 siteName: 30 Reasons
 siteDescription: 30 Reasons is a 30-poster campaign encouraging voters to support Hillary Clinton for President.
-siteUrl: http://www.30reasons.org/
-siteUrl: http://127.0.0.1:4000/
-baseUrl: http://www.30reasons.org/
+siteUrl: http://www.30reasons.org
+siteUrl: http://127.0.0.1:4000
 
 # Exclude and include
 exclude: [30reasons.bbprojectd, static-templates]
@@ -14,4 +13,4 @@ collections:
     permalink: :collection/:title.html
     
 # The current reason
-currentReason: 3
+currentReason: 1

@@ -9,12 +9,12 @@
 	
 		{% for reason in site.reasons %}
 		
-			{% if reason.image %}
+			{% if forloop.index <= site.currentReason %}
 				<div class="poster-slide">
 					<div id="P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster">
 						<div class="poster__info is-closed">
 							<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
-							<div class="poster__artist"><a href="{{ reason.url }}">{{ reason.artist }}</a></div>
+							<div class="poster__artist"><a href="{{ site.siteUrl }}{{ reason.url }}">{{ reason.artist }}</a></div>
 							<div class="poster__pubdate">{{ reason.pubDate }}</div>
 							<div class="poster__description">
 								{{ reason.content }}
@@ -25,14 +25,16 @@
 									<a href="#P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster__info-close">Close info</a>
 								</div>
 								<span class="action__label">Share:</span>
-								<div class="action__share">
-									<a class="share--fb" href="#">Facebook</a>
-									<a class="share--tw" href="#">Twitter</a>
-								</div>
+							{% capture twitterUrl %}http://twitter.com/intent/tweet?text={{ reason.title|url_encode }}&url={{ site.siteUrl|url_encode }}{{ reason.url|url_encode }}{% endcapture %}
+							{% capture facebookUrl %}https://www.facebook.com/sharer/sharer.php?u={{ site.siteUrl|url_encode }}{{ reason.url|url_encode }}{% endcapture %}
+							<div class="action__share">
+								<a class="share--fb" href="{{ facebookUrl }}">Facebook</a>
+								<a class="share--tw" href="{{ twitterUrl }}">Twitter</a>
+							</div>
 							</div>
 						</div>
 						<div class="poster__image">
-							<a href="{{ reason.url }}"><img src="public/images/30reasons-pattern.gif" data-flickity-lazyload="{{ site.siteUrl }}public/images/{{ reason.image }}" /></a>
+							<a href="{{ site.siteUrl }}{{ reason.url }}"><img src="{{ site.siteUrl }}/public/images/30reasons-pattern.gif" data-flickity-lazyload="{{ site.siteUrl }}/public/images/{{ reason.image }}" /></a>
 						</div>
 					</div>
 				</div>
@@ -40,11 +42,13 @@
 				{% break %}
 			{% endif %}
 		{% endfor %}
-
-		<ul class="poster-nav">
-			<li class="poster-nav__prev"><a class="js-animate-scroll" href="#Content">Prev</a></li>
-			<li class="poster-nav__next"><a class="js-animate-scroll" href="#Content">Next</a></li>
-		</ul>
+		
+		{% unless site.currentReason == 1 %}
+			<ul class="poster-nav">
+				<li class="poster-nav__prev"><a class="js-animate-scroll" href="#Content">Prev</a></li>
+				<li class="poster-nav__next"><a class="js-animate-scroll" href="#Content">Next</a></li>
+			</ul>
+		{% endunless %}
 
 	</section>
   

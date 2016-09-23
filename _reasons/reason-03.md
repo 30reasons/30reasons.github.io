@@ -2,15 +2,14 @@
 layout: reason
 bodyClass: sec-reason theme-blue
 title: Reason 3 by First M. Lastname
-number: 3
 numberTens: 0
 numberOnes: 3
 artist: First M. Lastname
 pubDate: Jul.20
 image: fpo_square.png
+thumbnail: fpo_square.png
 ---
 
-<p>Description is here lorem ipsum dolor sit amet consecutat velorem dolor.</p>
-<ul class="list">
-	<li><a href="http://www.mysite.com">mysite.com</a></li>
-</ul>
+Description is here lorem ipsum dolor sit amet consecutat velorem dolor.
+
+* [mysite.com](http://www.mysite.com)

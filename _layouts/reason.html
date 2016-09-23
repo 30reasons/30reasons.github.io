@@ -1,4 +1,4 @@
-{% include _html-head.html %}
+{% include _html-head.html reason="yes" %}
 
 <body class="{{ page.bodyClass }}">
 
@@ -22,15 +22,17 @@
 							<a href="#P{{ page.numberTens }}{{ page.numberOnes }}" class="poster__info-close">Close info</a>
 						</div>
 						<span class="action__label">Share:</span>
-						<div class="action__share">
-							<a class="share--fb" href="#">Facebook</a>
-							<a class="share--tw" href="#">Twitter</a>
-						</div>
+							{% capture twitterUrl %}http://twitter.com/intent/tweet?text={{ page.title|url_encode }}&url={{ site.siteUrl|url_encode }}{{ page.url|url_encode }}{% endcapture %}
+							{% capture facebookUrl %}https://www.facebook.com/sharer/sharer.php?u={{ site.siteUrl|url_encode }}{{ page.url|url_encode }}{% endcapture %}
+							<div class="action__share">
+								<a class="share--fb" href="{{ facebookUrl }}">Facebook</a>
+								<a class="share--tw" href="{{ twitterUrl }}">Twitter</a>
+							</div>
 					</div>
 				</div>
 				
 				<div class="poster__image">
-					<img src="{{ site.siteUrl }}public/images/{{ page.image }}" />
+					<img src="{{ site.siteUrl }}/public/images/{{ page.image }}" />
 				</div>
 			</div>
 		</div>
@@ -61,22 +63,24 @@
 			{% assign prev = links %}
 		{% endfor %}
 
-		<ul class="poster-nav">
-			<li class="poster-nav__prev">
-				{% if prevurl %}
-					<a href="{{ prevurl }}">Prev</a>
-				{% else %}
-					<a class="is-disabled" href="#">Prev</a>
-				{% endif %}
-			</li>
-			<li class="poster-nav__next">
-				{% if nexturl %}
-					<a href="{{ nexturl }}">Next</a>
-				{% else %}
-					<a class="is-disabled" href="#">Prev</a>
-				{% endif %}
-			</li>
-		</ul>
+		{% unless site.currentReason == 1 %}
+			<ul class="poster-nav">
+				<li class="poster-nav__prev">
+					{% if prevurl %}
+						<a href="{{ prevurl }}">Prev</a>
+					{% else %}
+						<a class="is-disabled" href="#">Prev</a>
+					{% endif %}
+				</li>
+				<li class="poster-nav__next">
+					{% if nexturl %}
+						<a href="{{ nexturl }}">Next</a>
+					{% else %}
+						<a class="is-disabled" href="#">Prev</a>
+					{% endif %}
+				</li>
+			</ul>
+		{% endunless %}
 
 	</section>
 

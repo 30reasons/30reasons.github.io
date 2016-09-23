@@ -11,9 +11,9 @@
 		<ul class="poster-grid">
 			{% for reason in site.reasons %}
 			<li class="poster-thumb">
-				{% if reason.number <= site.currentReason %}
+				{% if forloop.index <= site.currentReason %}
 					<div class="poster__image">
-						<a href="{{ reason.url }}"><img src="{{ site.siteUrl }}public/images/{{ reason.image }}" /></a>
+						<a href="{{ site.siteUrl }}{{ reason.url }}"><img src="{{ site.siteUrl }}/public/images/{{ reason.image }}" /></a>
 					</div>
 				{% else %}
 					<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
