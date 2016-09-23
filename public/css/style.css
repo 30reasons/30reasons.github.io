@@ -320,22 +320,22 @@ input[type=button] {
   box-sizing: border-box; }
 
 html {
-  font-size: 13px;
-  line-height: 1.38462; }
+  font-size: 14px;
+  line-height: 1.28571; }
   @media (min-width: 47.5em) {
     html {
-      font-size: 14px;
-      line-height: 1.42857; } }
+      font-size: 15px;
+      line-height: 1.33333; } }
 
 body {
   background: #fff url(../images/dots-blue-sm.png) left top repeat;
   font-family: "adelle-sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 100%;
-  line-height: 1.38462;
+  line-height: 1.28571;
   color: #0F1E30; }
   @media (min-width: 47.5em) {
     body {
-      line-height: 1.42857; } }
+      line-height: 1.33333; } }
   body * {
     margin: 0; }
   body * + * {
@@ -382,29 +382,29 @@ h1, h2, h3, h4, h5, h6 {
 h1, .as-h1 {
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.38462; }
+  line-height: 1.28571; }
   @media (min-width: 47.5em) {
     h1, .as-h1 {
       font-size: 32px;
-      line-height: 1.42857; } }
+      line-height: 1.33333; } }
 
 h2, .as-h2, .poster__artist {
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.38462; }
+  line-height: 1.28571; }
   @media (min-width: 47.5em) {
     h2, .as-h2, .poster__artist {
       font-size: 20px;
-      line-height: 1.42857; } }
+      line-height: 1.33333; } }
 
 h3, .as-h3 {
   font-size: 13px;
   font-weight: 700;
-  line-height: 1.38462; }
+  line-height: 1.28571; }
   @media (min-width: 47.5em) {
     h3, .as-h3 {
       font-size: 14px;
-      line-height: 1.42857; } }
+      line-height: 1.33333; } }
 
 /*
 h4, .as-h4 {
@@ -439,23 +439,23 @@ hgroup * {
   line-height: 1.2; }
 
 p {
-  font-size: 13px;
-  line-height: 1.38462; }
+  font-size: 14px;
+  line-height: 1.28571; }
   @media (min-width: 47.5em) {
     p {
-      font-size: 14px;
-      line-height: 1.42857; } }
+      font-size: 15px;
+      line-height: 1.33333; } }
 
 .lede {
-  font-size: 1.71429em;
+  font-size: 1.6em;
   color: #0F1E30; }
 
 blockquote {
   border-left: 1px solid #bfc1c3;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 29.99999px;
+  margin-bottom: 29.99999px;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 39.99999px;
   font-style: italic; }
 
 small {
@@ -491,14 +491,14 @@ sub, sup {
 hr {
   clear: both;
   display: block;
-  margin: 36px 0 27px;
+  margin: 35.99999px 0 26.99999px;
   padding: 0;
   height: 2px;
   border: 0;
   border-top: 1px solid #dee0e2; }
   @media (min-width: 47.5em) {
     hr {
-      margin: 40px 0 30px; } }
+      margin: 39.99999px 0 29.99999px; } }
 
 .list li + li {
   margin-top: 5px; }
@@ -899,7 +899,7 @@ legend.is-visually-hidden + * {
 .form__prompt .form__prompt__instruction {
   display: block;
   margin-top: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #0F1E30; }
 
@@ -919,7 +919,7 @@ legend.is-visually-hidden + * {
   min-height: 25vh; }
 
 .site-header__inner {
-  padding: 18px 121px 18px 18px; }
+  padding: 18px 120.99999px 18px 18px; }
 
 .site-logo {
   position: absolute;
@@ -1362,7 +1362,7 @@ legend.is-visually-hidden + * {
   .poster-thumb .poster__number {
     border-top-width: 0;
     margin-left: 10px;
-    margin-top: 36px; }
+    margin-top: 35.99999px; }
   .poster-thumb .poster__pubdate {
     border-bottom: 1px solid #6B819A;
     margin-bottom: 10px; }
@@ -1381,7 +1381,7 @@ legend.is-visually-hidden + * {
       transform: scale(0.95); }
   @media (min-width: 47.5em) {
     .poster-thumb .poster__number {
-      margin-top: 40px; } }
+      margin-top: 39.99999px; } }
 
 .site-about {
   position: relative;
@@ -1393,7 +1393,7 @@ legend.is-visually-hidden + * {
     margin-bottom: -9px; }
   @media (min-width: 47.5em) {
     .site-about {
-      padding: 80px 30px 40px; }
+      padding: 79.99998px 29.99999px 39.99999px; }
       .site-about h2 {
         margin-bottom: -10px; } }
   @media (min-width: 63.75em) {
@@ -1434,7 +1434,8 @@ legend.is-visually-hidden + * {
     .site-header .main-nav li {
       font-weight: 700;
       display: inline-block;
-      padding-right: 2px; }
+      padding-right: 4px;
+      padding-bottom: 3px; }
     .site-header .main-nav a {
       display: inline-block;
       padding: 3px 5px;
@@ -1468,7 +1469,10 @@ legend.is-visually-hidden + * {
     .site-header .main-nav {
       margin-top: 20px; }
     .site-header .main-nav li {
-      display: block; } }
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 8px; } }
 
 .sec-home #NavHome {
   display: none; }

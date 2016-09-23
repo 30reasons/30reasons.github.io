@@ -34,7 +34,8 @@
 		li {
 			font-weight: fontWeight(headline);
 			display: inline-block;
-			padding-right: 2px;
+			padding-right: 4px;
+			padding-bottom: 3px;
 		}
 		a {
 			display: inline-block;
@@ -88,6 +89,8 @@
 		
 		.main-nav li {
 			display: block;
+			@include zero;
+			margin-bottom: 8px;
 		}
 
 	}
