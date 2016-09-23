@@ -6,7 +6,7 @@ number: 3
 numberTens: 0
 numberOnes: 3
 artist: Brett Yasko
-artistShort:
+artistShort: ---
 pubDate: Sep.30
 image: 30Reasons_BrettYasko_800px.gif
 thumbnail: 30Reasons_BrettYasko_320px.jpg
