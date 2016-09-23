@@ -17,40 +17,40 @@
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="{{ site.siteUrl }}/favicon.png" />	 
-	<link rel="apple-touch-icon" href="{{ site.siteUrl }}/apple-touch-icon.png"" />
+	<link rel="shortcut icon" href="{{ site.github.url }}/favicon.png" />	 
+	<link rel="apple-touch-icon" href="{{ site.github.url }}/apple-touch-icon.png"" />
 	<!-- CSS -->
-	<link href="{{ site.siteUrl }}/public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{ site.github.url }}/public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	<!-- Modernizr -->
-	<script src="{{ site.siteUrl }}/public/js/libs/modernizr-3.3.1.svg-flex-flexwrap.js"></script>
+	<script src="{{ site.github.url }}/public/js/libs/modernizr-3.3.1.svg-flex-flexwrap.js"></script>
 	{% if page.layout == 'reason' %}
 		<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@30Reasons" />
 		<meta name="twitter:title" content="{{ page.title }}" />
 		<meta name="twitter:description" content="{{ site.siteDescription }}" />
-		<meta name="twitter:url" content="{{ site.siteUrl }}{{ page.url }}" />
-		<meta name="twitter:image" content="{{ site.siteUrl }}/public/images/{{ page.thumbnail }}"
+		<meta name="twitter:url" content="{{ site.github.url }}{{ page.url }}" />
+		<meta name="twitter:image" content="{{ site.github.url }}/public/images/{{ page.thumbnail }}"
 		<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
 		<meta property="og:title" content="{{ page.title }}" />
 		<meta property="og:description" content="{{ site.siteDescription }}" />
-		<meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}" />
-		<meta property="og:image" content="{{ site.siteUrl }}/public/images/{{ page.thumbnail }}" />
+		<meta property="og:url" content="{{ site.github.url }}{{ page.url }}" />
+		<meta property="og:image" content="{{ site.github.url }}/public/images/{{ page.thumbnail }}" />
 	{% else %}
 		<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@30Reasons">
 		<meta name="twitter:title" content="{{ site.siteName }}" />
 		<meta name="twitter:description" content="{{ site.siteDescription }}" />
-		<meta name="twitter:url" content="{{ site.siteUrl }}">
-		<meta name="twitter:image" content="{{ site.siteUrl }}/apple-touch-icon.png" />
+		<meta name="twitter:url" content="{{ site.github.url }}">
+		<meta name="twitter:image" content="{{ site.github.url }}/apple-touch-icon.png" />
 		<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
 		<meta property="og:title" content="{{ site.siteName }}" />
 		<meta property="og:description" content="{{ site.siteDescription }}" />
-		<meta property="og:url" content="{{ site.siteUrl}}" />
-		<meta property="og:image" content="{{ site.siteUrl }}/apple-touch-icon.png" />
+		<meta property="og:url" content="{{ site.github.url }}" />
+		<meta property="og:image" content="{{ site.github.url }}/apple-touch-icon.png" />
 	{% endif %}
 	{% if page.layout == 'home' %}
-		<link rel="stylesheet" type="text/css" href="{{ site.siteUrl }}/public/css/libs/flickity.min.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ site.github.url }}/public/css/libs/flickity.min.css"/>
 	{% endif %}
 </head>

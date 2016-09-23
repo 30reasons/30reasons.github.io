@@ -14,7 +14,7 @@
 					<div id="P{{ reason.numberOnes }}{{reason.numberTens }}" class="poster">
 						<div class="poster__info is-closed">
 							<div class="poster__number"><span class="number__tens number--{{ reason.numberTens }}">{{ reason.numberTens }}</span><span class="number__ones number--{{ reason.numberOnes }}">{{ reason.numberOnes }}</span></div>
-							<div class="poster__artist"><a href="{{ site.siteUrl }}{{ reason.url }}">{{ reason.artist }}</a></div>
+							<div class="poster__artist"><a href="{{ site.github.url }}{{ reason.url }}">{{ reason.artist }}</a></div>
 							<div class="poster__pubdate">{{ reason.pubDate }}</div>
 							<div class="poster__description">
 								{{ reason.content }}
@@ -34,7 +34,7 @@
 							</div>
 						</div>
 						<div class="poster__image">
-							<a href="{{ site.siteUrl }}{{ reason.url }}"><img src="{{ site.siteUrl }}/public/images/30reasons-pattern.gif" data-flickity-lazyload="{{ site.siteUrl }}/public/images/{{ reason.image }}" /></a>
+							<a href="{{ site.github.url }}{{ reason.url }}"><img src="{{ site.github.url }}/public/images/30reasons-pattern.gif" data-flickity-lazyload="{{ site.github.url }}/public/images/{{ reason.image }}" /></a>
 						</div>
 					</div>
 				</div>
