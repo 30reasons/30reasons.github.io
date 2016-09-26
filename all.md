@@ -15,13 +15,7 @@ It is with her that we raise our voices and cast our votes.
 
 <h2 id="Follow">Follow and subscribe</h2>
 
-Don’t miss a single reason. You have three options:
-
-<ul class="list list--bullet">
-<li><a href="https://twitter.com/30reasons">Follow us on Twitter</a></li>
-<li><a href="https://www.facebook.com/30Reasons">Join us on Facebook</a></li>
-<li><a href="http://eepurl.com/chpUtD">Subscribe to our mailing list</a></li>
-</ul>
+Don’t miss a single reason. You have three options: [follow us on Twitter](https://twitter.com/30reasons), [join us on Facebook](https://www.facebook.com/30Reasons), or [subscribe to our mailing list](http://eepurl.com/chpUtD).
 
 ## Contact
 
