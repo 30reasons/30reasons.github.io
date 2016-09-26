@@ -1396,6 +1396,17 @@ legend.is-visually-hidden + * {
   padding: 18px; }
   .site-about h2 {
     margin-bottom: -9px; }
+  .site-about a {
+    display: inline;
+    padding: 0 3px;
+    background-color: #D7E4F6;
+    color: #0F1E30;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s; }
+    .site-about a:hover {
+      background-color: #0F1E30;
+      color: #ffffff; }
   @media (min-width: 47.5em) {
     .site-about {
       padding: 80px 30px 40px; }
@@ -1449,8 +1460,14 @@ legend.is-visually-hidden + * {
       text-decoration: none;
       transition: all .2s; }
       .site-header .main-nav a:hover {
-        background-color: #0F1E30;
+        background-color: #6B819A;
         color: #ffffff; }
+  .site-header #NavFollow a {
+    background-color: #0F1E30;
+    color: #ffffff; }
+    .site-header #NavFollow a:hover {
+      background-color: #6B819A;
+      color: #ffffff; }
   .site-header .site-logo {
     display: block;
     height: 50px;
@@ -1512,8 +1529,14 @@ legend.is-visually-hidden + * {
 .theme-blue .site-header .positioning__number {
   color: #D80000; }
 .theme-blue .main-nav a:hover {
+  background-color: #3C5068;
+  color: #ffffff; }
+.theme-blue #NavFollow a {
   background-color: #6B819A;
   color: #0F1E30; }
+  .theme-blue #NavFollow a:hover {
+    background-color: #3C5068;
+    color: #ffffff; }
 
 .theme-red .site-header {
   background-color: #D80000;

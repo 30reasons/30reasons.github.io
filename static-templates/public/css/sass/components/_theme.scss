@@ -18,8 +18,16 @@
 		color: palette(red);
 	}
 	.main-nav a:hover {
+		background-color: palette(blue, light);
+		color: palette(white);
+	}
+	#NavFollow a {
 		background-color: palette(blue, x-light);
 		color: palette(blue);
+		&:hover {
+			background-color: palette(blue, light);
+			color: palette(white);
+		}
 	}
 }
 

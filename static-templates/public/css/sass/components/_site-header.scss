@@ -45,7 +45,18 @@
 			text-decoration: none;
 			transition: all .2s;
 			&:hover {
-				background-color: palette(blue);
+				background-color: palette(blue, x-light);
+				color: palette(white);
+			}
+		}
+	}
+	
+	#NavFollow {
+		a {
+			background-color: palette(blue);
+			color: palette(white);
+			&:hover {
+				background-color: palette(blue, x-light);
 				color: palette(white);
 			}
 		}
