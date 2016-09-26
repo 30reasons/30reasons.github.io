@@ -99,10 +99,12 @@
 	font-weight: fontWeight(headline);
 }
 .poster__description {
+	padding-bottom: space(mobile);
 	> * + *{
 		margin-top: space(mobile, small);
 	}
 	@include breakpoint($bp-med) {
+		padding-bottom: space(standard);
 		> * + * {
 			margin-top: space(standard, small);
 		}
@@ -132,9 +134,10 @@
 }
 .share--fb,
 .share--tw {
-	display: inline-block;
+	float: right;
 	width: sprite(share, w);//36px;
 	height: sprite(share, h);//36px;
+	margin-left: space(standard, small);
 	text-indent: sprite(share, w)*2;
 	overflow: hidden;
 	background: {

@@ -1178,11 +1178,15 @@ legend.is-visually-hidden + * {
   font-family: "Courier New", "Courier", monospace;
   font-weight: 700; }
 
-.poster__description > * + * {
-  margin-top: 9px; }
-@media (min-width: 47.5em) {
+.poster__description {
+  padding-bottom: 18px; }
   .poster__description > * + * {
-    margin-top: 10px; } }
+    margin-top: 9px; }
+  @media (min-width: 47.5em) {
+    .poster__description {
+      padding-bottom: 20px; }
+      .poster__description > * + * {
+        margin-top: 10px; } }
 
 .poster__image {
   margin-top: 0;
@@ -1203,10 +1207,11 @@ legend.is-visually-hidden + * {
 
 .share--fb,
 .share--tw {
-  display: inline-block;
-  width: 40px;
+  float: right;
+  width: 28px;
   height: 34px;
-  text-indent: 80px;
+  margin-left: 10px;
+  text-indent: 56px;
   overflow: hidden;
   background-color: transparent;
   background-image: url(../images/30reasons-sprites.png);
@@ -1221,7 +1226,7 @@ legend.is-visually-hidden + * {
   background-position: -520px -150px; }
 
 .share--fb {
-  background-position: -556px -150px; }
+  background-position: -550px -150px; }
 
 .action__toggle {
   display: none; }
