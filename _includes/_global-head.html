@@ -12,6 +12,13 @@
 				{% endif %}
 			</li>
 			<li id="NavDonate"><a href="http://www.hillaryclinton.com/donate">Donate to Hillary’s campaign</a></li>
+			<li id="NavFollow">
+				{% if page.layout == 'all' %}
+					<a class="js-animate-scroll" href="#Follow">Follow and subscribe</a>
+				{% else %}
+					<a href="{{ site.github.url }}/reasons/index.html#Follow">Follow and subscribe</a>
+				{% endif %}
+			</li>			
 		</ul>
 		{% if page.layout == 'home' %}
 			<div class="site-logo">30R</div>
