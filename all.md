@@ -13,6 +13,14 @@ We believe that Hillary Clinton is the only candidate that can continue the prog
 
 It is with her that we raise our voices and cast our votes.
 
+<h2 id="Follow">Follow and subscribe</h2>
+
+Don’t miss a single reason. You have three options:
+
+* [Follow us on Twitter](https://twitter.com/30reasons)
+* [Join us on Facebook](https://www.facebook.com/30Reasons)
+* [Subscribe to our mailing list](http://eepurl.com/chpUtD)
+
 ## Contact
 
 Your questions or comments are welcome. Please direct all correspondence to [info@30reasons.org](mailto:info@30reasons.org). We read everything we receive, but can’t promise to respond to all messages.
