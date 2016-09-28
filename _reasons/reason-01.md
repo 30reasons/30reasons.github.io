@@ -5,7 +5,7 @@ title: Reason 1 by OCD | The Original Champions of Design
 number: 1
 numberTens: 0
 numberOnes: 1
-artist: The Original Champions of Design
+artist: OCD | The Original Champions of Design
 artistShort: OCD
 pubDate: Sep.28
 image: 30Reasons_OCD-BobbyMartin_800px.jpg
