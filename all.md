@@ -26,5 +26,5 @@ Your questions or comments are welcome. Please direct all correspondence to [inf
 The website was designed and built by Adam Snetman, founder of [Starting Now](http://www.startingnow.co).
 
 <p>
-Posters were generously contributed by{% for reason in site.reasons %}{% if forloop.index <= site.currentReason %}{% if forloop.index == site.currentReason and site.currentReason != 1 %} and{% endif %} [{{ reason.artist }}]({{ reason.url | prepend: site.github.url }}){% unless forloop.index == site.currentReason or site.currentReason == 2 %},{% endunless %}{% else %}{% break %}{% endif %}{% endfor %}.
+Posters were generously contributed by{% for reason in site.reasons %}{% if forloop.index <= site.currentReason %}{% if forloop.index == site.currentReason and site.currentReason != 1 %} and{% endif %} <a href="{{ reason.url | prepend: site.github.url }}">{{ reason.artist }}</a>{% unless forloop.index == site.currentReason or site.currentReason == 2 %},{% endunless %}{% else %}{% break %}{% endif %}{% endfor %}.
 </p>
