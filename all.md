@@ -5,13 +5,11 @@ bodyClass: sec-all theme-blue
 permalink: reasons/index.html
 ---
 
-When 30 Reasons first formed in 2008, it was a time of great optimism. America was on the verge electing its first black President, a candidate who stood for hope and change. In the 8 years that followed, that change looked beautiful: universal healthcare, marriage equality, an end to the Iraq war.
+Each day leading up to the election, 30 designers and artists will offer their reasons for supporting Hillary Clinton for President. 
 
-This year is different. The election is still about change, but the change Donald Trump promises is ugly: a return to isolationism, an embrace of bigotry, a celebration of ignorance and greed. This is change we cannot afford.
+The outcome of this election is not a forgone conclusion. It’s up to all of us to speak up in support of Hillary’s message that we’re stronger together, voice our opposition to Trump’s racist, sexist and hateful rhetoric and vote on November 8th.
 
-We believe that Hillary Clinton is the only candidate that can continue the progress that started in 2008. She will spend the next eight years fighting for people of all races, creeds, and values. She knows that in America, a person’s worth doesn’t depend on where they were born or who they were born to.
-
-It is with her that we raise our voices and cast our votes.
+All together we raise our voices and say, I’m with her!
 
 <h2 id="Follow">Follow and subscribe</h2>
 
