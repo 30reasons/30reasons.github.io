@@ -7,7 +7,7 @@ permalink: reasons/index.html
 
 Each day leading up to the election, 30 designers and artists will offer their reasons for supporting Hillary Clinton for President. 
 
-The outcome of this election is not a forgone conclusion. It’s up to all of us to speak up in support of Hillary’s message that we’re stronger together, voice our opposition to Trump’s racist, sexist and hateful rhetoric and vote on November 8th.
+The outcome of this election is not a foregone conclusion. It’s up to all of us to speak up in support of Hillary’s message that we’re stronger together, voice our opposition to Trump’s racist, sexist and hateful rhetoric and vote on November 8th.
 
 All together we raise our voices and say, I’m with her!
 
