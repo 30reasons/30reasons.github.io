@@ -5,7 +5,7 @@ title: Reason 2 by Bonnie Siegler
 number: 2
 numberTens: 0
 numberOnes: 2
-artist: Bonnie Siegler
+artist: Bonnie Siegler | Eight and a Half
 artistShort: Bonnie Siegler
 pubDate: Sep.29
 image: 30Reasons_BonnieSiegler_800px.jpg
