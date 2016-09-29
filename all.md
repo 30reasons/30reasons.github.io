@@ -13,7 +13,7 @@ All together we raise our voices and say, I’m with her!
 
 <h2 id="Follow">Follow and subscribe</h2>
 
-Don’t miss a single reason. You have three options: [follow us on Twitter](https://twitter.com/30reasons), [join us on Facebook](https://www.facebook.com/30Reasons), or [subscribe to our mailing list](http://eepurl.com/chpUtD).
+Don’t miss a single reason. You have four options: [follow us on Twitter](https://twitter.com/30reasons), [follow us on Instagram](https://www.instagram.com/30.Reasons/), [join us on Facebook](https://www.facebook.com/30Reasons), or [subscribe to our mailing list](http://eepurl.com/chpUtD).
 
 ## Contact
 
