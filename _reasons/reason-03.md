@@ -1,17 +1,17 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
-title: Reason 3 by Brett Yasko
+title: Reason 3 by Matt Dorfman
 number: 3
 numberTens: 0
 numberOnes: 3
-artist: Brett Yasko
-artistShort: ---
+artist: Matt Dorfman
+artistShort: Matt Dorfman
 pubDate: Sep.30
-image: 30Reasons_BrettYasko_800px.gif
-thumbnail: 30Reasons_BrettYasko_320px.jpg
+image: 30Reasons_MattDorfman_800px.gif
+thumbnail: 30Reasons_MattDorfman_320px.jpg
 ---
 
-Trump wants an alt-right media empire much more than he wants the Presidency. But what if he WINS? Will he eat his words or double down?
+One candidate running for president has been parsing bland policy particulars to make whatever attempts possible to nudge the needle forward for people besides herself since she left college. The other candidate running for president is a businessman who has defrauded his contractors, swindled his customers and slashed his inherited wealth. He is louder, hypnotic to watch and relentlessly interesting.
 
-[brettyasko.com](http://www.brettyasko.com)
+[metalmother.com](http://www.metalmother.com)
