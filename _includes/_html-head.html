@@ -37,18 +37,19 @@
 		<meta property="og:url" content="{{ site.github.url }}{{ page.url }}" />
 		<meta property="og:image" content="{{ site.github.url }}/public/images/{{ page.thumbnail }}" />
 	{% else %}
+		{% assign arrayIndex = site.currentReason|minus:1 %}	
 		<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@30Reasons">
 		<meta name="twitter:title" content="{{ site.siteName }}" />
 		<meta name="twitter:description" content="{{ site.siteDescription }}" />
 		<meta name="twitter:url" content="{{ site.github.url }}">
-		<meta name="twitter:image" content="{{ site.github.url }}/apple-touch-icon.png" />
+		<meta name="twitter:image" content="{{ site.github.url }}/public/images/{{ site.reasons[arrayIndex].thumbnail }}" />
 		<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
 		<meta property="og:title" content="{{ site.siteName }}" />
 		<meta property="og:description" content="{{ site.siteDescription }}" />
 		<meta property="og:url" content="{{ site.github.url }}" />
-		<meta property="og:image" content="{{ site.github.url }}/apple-touch-icon.png" />
+		<meta property="og:image" content="{{ site.github.url }}/public/images/{{ site.reasons[arrayIndex].thumbnail }}" />
 	{% endif %}
 	{% if page.layout == 'home' %}
 		<link rel="stylesheet" type="text/css" href="{{ site.github.url }}/public/css/libs/flickity.min.css"/>
