@@ -1182,6 +1182,17 @@ legend.is-visually-hidden + * {
   padding-bottom: 18px; }
   .poster__description > * + * {
     margin-top: 9px; }
+  .poster__description a {
+    display: inline;
+    padding: 0 3px;
+    background-color: #D7E4F6;
+    color: #0F1E30;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s; }
+    .poster__description a:hover {
+      background-color: #0F1E30;
+      color: #ffffff; }
   @media (min-width: 47.5em) {
     .poster__description {
       padding-bottom: 20px; }

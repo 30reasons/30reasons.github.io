@@ -103,6 +103,19 @@
 	> * + *{
 		margin-top: space(mobile, small);
 	}
+	a {
+		display: inline;
+		padding: 0 3px;
+		background-color: palette(blue, xx-light);
+		color: palette(blue);
+		font-weight: fontWeight(headline);
+		text-decoration: none;
+		transition: all .2s;
+		&:hover {
+			background-color: palette(blue);
+			color: palette(white);
+		}
+	}		
 	@include breakpoint($bp-med) {
 		padding-bottom: space(standard);
 		> * + * {
