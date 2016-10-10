@@ -431,6 +431,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/public\/css\/sass\/components\/_poster.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/sass\/components\/_poster.scss",
+		"outputAbbreviatedPath": "\/public\/css\/_poster.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/public\/css\/sass\/components\/_sections.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1006,6 +1022,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/public\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/public\/images\/30reasons-sprites.png": {
 		"fileType": 32768,
