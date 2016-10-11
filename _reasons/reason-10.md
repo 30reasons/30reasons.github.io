@@ -1,17 +1,15 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
-title: Reason 10
+title: Reason 10 by Chaz Maviyane-Davies
 number: 10
 numberTens: 1
 numberOnes: 0
-artist:
-artistShort: ---
+artist: Chaz Maviyane-Davies
+artistShort: Chaz Maviyane-Davies
 pubDate: Oct.11
-image: 30reasons-pattern.gif
-thumbnail: 30reasons-pattern.gif
+image: 30Reasons_ChazMaviyaneDavies_800px.jpg
+thumbnail: 30Reasons_ChazMaviyaneDavies_320px.jpg
 ---
 
-Description here.
-
-[someurl.com](http://www.someurl.com)
+[maviyane.com](http://www.maviyane.com)
