@@ -1,13 +1,17 @@
 ---
 layout: reason
 bodyClass: sec-reason theme-blue
-title: Reason 12
+title: Reason 12 by Debbie Millman &amp; Mark Dudlik
 number: 12
 numberTens: 1
 numberOnes: 2
-artist:
-artistShort: ---
+artist: Debbie Millman &amp; Mark Dudlik
+artistShort: Debbie Millman &amp; Mark Dudlik
 pubDate: Oct.13
-image: 30reasons-pattern.gif
-thumbnail: 30reasons-pattern.gif
+image: 30Reasons_DebbieMillman_800px.jpg
+thumbnail: 30Reasons_DebbieMillman_320px.jpg
 ---
+
+We believe that the bigness of a person’s life correlates with the bigness of a person’s heart.
+
+[debbiemillman.com](http://www.debbiemillman.com)
