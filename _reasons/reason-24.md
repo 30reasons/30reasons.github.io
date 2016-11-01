@@ -12,6 +12,6 @@ image: 30Reasons_Collins_800px.jpg
 thumbnail: 30Reasons_Collins_320px.jpg
 ---
 
-Don’t let the American Dream become the American Nightmare – vote Hillary
+Decide for yourself.
 
 [wearecollins.com](http://www.wearecollins.com)
